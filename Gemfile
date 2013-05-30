@@ -4,6 +4,7 @@ gem 'rails', '3.2.13'
 gem 'unicorn'
 gem 'sqlite3'
 gem 'jquery-rails'
+gem 'etsy'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
