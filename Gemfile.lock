@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/kytrinyx/etsy.git
+  revision: 0ef3a69153974f51f973136341620f8e38e7f805
+  specs:
+    etsy (0.2.1)
+      json (>= 1.5.0)
+      oauth (~> 0.4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -46,9 +54,6 @@ GEM
     daemons (1.1.9)
     debug_inspector (0.0.2)
     erubis (2.7.0)
-    etsy (0.2.1)
-      json (>= 1.5.0)
-      oauth (~> 0.4.0)
     eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -130,7 +135,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   coffee-rails (~> 3.2.1)
-  etsy
+  etsy!
   jquery-rails
   oauth
   pg
