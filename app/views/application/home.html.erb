@@ -2,6 +2,11 @@
 
 <%= @user.inspect %>
 <br><br><br>
+<% @images.each do |image| %>
+  <%= image_tag image.result["url_570xN"] %>
+  <br><br>
+<% end %>
+<br><br><br>
 <% @favs.each do |fav| %>
   <%= fav.inspect %>
   <br><br>

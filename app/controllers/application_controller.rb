@@ -5,10 +5,17 @@ class ApplicationController < ActionController::Base
     initialize_etsy
     @user = Etsy::User.find('johnmaddux')
     @favs = Etsy::FavoriteListing.find_all_user_favorite_listings(@user.id)
+    @images = []
+    @favs.each do |fav|
+      @images << Etsy::Image.find_all_by_listing_id(fav.listing_id)
+    end
+    @images = @images.flatten
   end
 
 private
   def initialize_etsy
+    # Etsy.api_key = ETSY_API_KEY
+    # Etsy.api_secret = ETSY_API_SECRET
     Etsy.api_key = 'zq28pq66whj2cp3tfy9lqz6x'
     Etsy.api_secret = 'owztxt2cyb'
     Etsy.environment = :production
