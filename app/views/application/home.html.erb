@@ -1,5 +1,8 @@
 <h3>Feed from Etsy</h3>
 
 <%= @user.inspect %>
-<br>
-<%= @favs.inspect %>
+<br><br><br>
+<% @favs.each do |fav| %>
+  <%= fav.inspect %>
+  <br><br>
+<% end %>
