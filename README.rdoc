@@ -1,3 +1,0 @@
-Crafty!!!
-
-[![Code Climate](https://codeclimate.com/github/jemaddux/crafty.png)](https://codeclimate.com/github/jemaddux/crafty)
