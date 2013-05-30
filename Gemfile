@@ -5,6 +5,8 @@ gem 'pg'
 gem 'thin'
 gem 'unicorn'
 gem 'jquery-rails'
+gem 'oauth'
+gem 'binding_of_caller'
 gem 'etsy'
 
 group :assets do
@@ -15,6 +17,7 @@ end
 
 group :test, :development do
   gem 'sqlite3'
+  gem 'better_errors'
 end
 
 # Bundle edge Rails instead:
