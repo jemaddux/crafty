@@ -7,7 +7,7 @@ gem 'unicorn'
 gem 'jquery-rails'
 gem 'oauth'
 gem 'binding_of_caller'
-gem 'etsy'
+gem 'etsy', git: "git://github.com/kytrinyx/etsy.git"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
