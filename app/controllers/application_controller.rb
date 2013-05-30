@@ -14,28 +14,8 @@ class ApplicationController < ActionController::Base
 
 private
   def initialize_etsy
-    # Etsy.api_key = ETSY_API_KEY
-    # Etsy.api_secret = ETSY_API_SECRET
     Etsy.api_key = 'zq28pq66whj2cp3tfy9lqz6x'
     Etsy.api_secret = 'owztxt2cyb'
     Etsy.environment = :production
   end
-
-  # def etsy_callback
-  #   access_token = Etsy.access_token(
-  #   session[:request_token],
-  #   session[:request_secret],
-  #   params[:oauth_verifier]
-  #   )
-  #   session[:access_token] = access_token
-  #   # access_token.token and access_token.secret can now be saved for future API calls
-  #   redirect_to root_path
-  # end
-
-  # def etsy_login
-  #   request_token = Etsy.request_token
-  #   session[:request_token]  = request_token.token
-  #   session[:request_secret] = request_token.secret
-  #   redirect_to root_path #etsy_callback_path #Etsy.verification_url
-  # end
 end
