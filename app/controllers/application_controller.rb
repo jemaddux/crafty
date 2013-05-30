@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
     redirect root_path
   end
 
-  def login_to_etsy
+  def etsy_login
     request_token = Etsy.request_token
     session[:request_token]  = request_token.token
     session[:request_secret] = request_token.secret
