@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
+gem 'pg'
+gem 'thin'
 gem 'unicorn'
 gem 'jquery-rails'
 gem 'etsy'
-gem 'pg'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
