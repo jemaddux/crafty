@@ -1,5 +1,7 @@
 Crafty::Application.routes.draw do
 
+  match "etsy_login", to: "application#etsy_login"
+  match "etsy_callback", to: "application#etsy_callback"
   root :to => "application#home"
 end
 
