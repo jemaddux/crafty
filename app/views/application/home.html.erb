@@ -1,13 +1,28 @@
-<h3>Feed from Etsy</h3>
+<h1>Create a Poll from all your favorited Etsy items</h1>
 
-<%= @user.inspect %>
+<%= form_tag("/create_poll", method: "post") do %>
+  <%= label_tag(:username, "Etsy username:") %>
+  <%= text_field_tag(:username) %>
+  <%= submit_tag("Create Poll") %>
+<% end %>
+
+
+
+
+<%= @user.inspect if @user %>
 <br><br><br>
-<% @images.each do |image| %>
-  <%= image_tag image.result["url_570xN"] %>
-  <br><br>
+
+<% if @images %>
+  <% @images.each do |image| %>
+    <%= image_tag image.result["url_570xN"] %>
+    <br><br>
+  <% end %>
 <% end %>
 <br><br><br>
-<% @favs.each do |fav| %>
-  <%= fav.inspect %>
-  <br><br>
+
+<% if @favs %>
+  <% @favs.each do |fav| %>
+    <%= fav.inspect %>
+    <br><br>
+  <% end %>
 <% end %>
