@@ -13,6 +13,8 @@ class Item < ActiveRecord::Base
       item.listing_id = etsy_item.result["listing_id"]
       item.description = etsy_item.result["description"]
       item.save!
+
+      ItemImageUrl.create_from_etsy(item.listing_id, item.id)
     end
   end
 end

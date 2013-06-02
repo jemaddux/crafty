@@ -16,12 +16,6 @@ class PollsController < ApplicationController
     @poll.etsy_username = params[:username]
     @poll.save!
 
-    # @images = []
-    # @etsy_items.each do |item|
-    #   @images << Etsy::Image.find_all_by_listing_id(item.listing_id)
-    # end
-    # @images = @images.flatten
-
     if @poll.save
       redirect_to @poll, notice: 'poll was successfully created.'
     else
@@ -41,6 +35,7 @@ class PollsController < ApplicationController
       @items << item
     end
 
+    @image = Etsy::Image.find_all_by_listing_id(Item.first.listing_id)
   end
 
   # def update
