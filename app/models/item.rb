@@ -1,7 +1,7 @@
 class Item < ActiveRecord::Base
   attr_accessible :name, :rating
   belongs_to :poll
-  has_many :item_images, :dependent => :destroy
+  has_many :item_image_urls, :dependent => :destroy
 
   def self.create_etsy_item(etsy_item, poll_id)
     unless Item.where(listing_id: etsy_item.result["listing_id"],
