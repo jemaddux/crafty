@@ -6,11 +6,15 @@ Show a Poll!
 
 Poll Items Count: <%= @poll.items.count %>
 
+Poll ItemsImageUrls Count: <%= @poll.items.item_image_url.count %>
+
 <br><br><br>
 
 Etsy Items:
 <br>
-<% @items.each do |item| %>
-  <%= item.result %>
-  <br><br>
-<% end %>
+<%= @items.first.result %>
+
+<br><br><br>
+Etsy Images:
+<br>
+<%= @image.inspect %>
