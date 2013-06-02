@@ -12,11 +12,6 @@ class ApplicationController < ActionController::Base
     # @images = @images.flatten
   end
 
-  def create_poll
-    @params = params
-    render :poll
-  end
-
 private
   def initialize_etsy
     Etsy.api_key = 'zq28pq66whj2cp3tfy9lqz6x'
