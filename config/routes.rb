@@ -1,4 +1,5 @@
 Crafty::Application.routes.draw do
+  resources :polls
   match "create_poll", to: "application#create_poll"
   match "etsy_login", to: "application#etsy_login"
   match "etsy_callback", to: "application#etsy_callback"
