@@ -10,7 +10,7 @@ class ItemImageUrl < ActiveRecord::Base
       iiu.url = image.result["url_570xN"]
       iiu.primary_image = first
       iit.item_id = item_id
-      iiu.save
+      iiu.save!
       first = false
     end
   end
