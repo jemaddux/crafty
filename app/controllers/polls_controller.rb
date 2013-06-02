@@ -33,9 +33,12 @@ class PollsController < ApplicationController
     @poll = Poll.find(params[:id])
     initialize_etsy
     @user = Etsy::User.find(@poll.etsy_username)
-    @items = Etsy::FavoriteListing.find_all_user_favorite_listings(@user.id)
-    @items.each do |item|
-      # Item.create_etsy_item(item)
+    @faves = Etsy::FavoriteListing.find_all_user_favorite_listings(@user.id)
+    @items = []
+    @faves.each do |fav|
+      item = Etsy::Listing.find(fav.result["listing_id"])
+      Item.create_etsy_item(item, @poll.id)
+      @items << item
     end
 
   end
