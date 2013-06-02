@@ -1,0 +1,16 @@
+Show a Poll!
+
+<%= @poll.inspect %>
+
+<br><br><br>
+
+Poll Items Count: <%= @poll.items.count %>
+
+<br><br><br>
+
+Etsy Items:
+<br>
+<% @items.each do |item| %>
+  <%= item.result %>
+  <br><br>
+<% end %>
