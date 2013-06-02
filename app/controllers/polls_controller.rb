@@ -35,7 +35,7 @@ class PollsController < ApplicationController
       @items << item
     end
 
-    @image = Etsy::Image.find_all_by_listing_id(Item.first.listing_id)
+    # @image = Etsy::Image.find_all_by_listing_id(Item.first.listing_id)
   end
 
   # def update
