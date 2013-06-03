@@ -1,15 +1,7 @@
 class PollsController < ApplicationController
-  # def index
-  #   @polls = Poll.all
-  # end
-
   def new
     @poll = Poll.new
   end
-
-  # def edit
-  #   @poll = Poll.find(params[:id])
-  # end
 
   def create
     @poll = Poll.new(params[:poll])
@@ -44,6 +36,14 @@ class PollsController < ApplicationController
   #   @poll = Poll.find(params[:id])
   #   @poll.destroy
   #   redirect_to polls_url
+  # end
+
+  # def index
+  #   @polls = Poll.all
+  # end
+
+  # def edit
+  #   @poll = Poll.find(params[:id])
   # end
 
 private
