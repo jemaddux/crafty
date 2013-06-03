@@ -2,8 +2,16 @@ Poll #<%= @poll.id %> created by <%= @poll.etsy_username %>.
 
 <br><br><br>
 
-<ul>
 <% @poll.items.each do |item| %>
-  <li><%= image_tag item.item_image_urls.first.url %></li>
+  <%= item.name %><br>
+  <%= image_tag item.item_image_urls.first.url %><br>
+  Item Rating: <%= item.rating %><br>
+  <%= form_tag("/rate_item", method: "post") do %>
+    <%= label_tag(:rating, "Rating (0-5):") %>
+    <%= text_field_tag(:rating) %>
+    <%= text_field_tag(:item_id, item.id) %>
+    <%= submit_tag("Rate Item") %>
+  <% end %>
+  <br><br><br>
 <% end %>
-</ul>
+
