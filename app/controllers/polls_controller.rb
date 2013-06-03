@@ -15,6 +15,8 @@ class PollsController < ApplicationController
     @poll = Poll.new(params[:poll])
     @poll.etsy_username = params[:username]
     @poll.save!
+    initialize_etsy
+    @poll.etsy
 
     if @poll.save
       redirect_to @poll, notice: 'poll was successfully created.'
@@ -25,16 +27,6 @@ class PollsController < ApplicationController
 
   def show
     @poll = Poll.find(params[:id])
-    initialize_etsy
-    @user = Etsy::User.find(@poll.etsy_username)
-    @faves = Etsy::FavoriteListing.find_all_user_favorite_listings(@user.id)
-    @items = []
-    @faves.each do |fav|
-      item = Etsy::Listing.find(fav.result["listing_id"])
-      Item.create_etsy_item(item, @poll.id)
-      @items << item
-    end
-
     # @image = Etsy::Image.find_all_by_listing_id(Item.first.listing_id)
   end
 
