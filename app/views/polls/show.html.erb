@@ -1,17 +1,9 @@
-Show a Poll!
-
-<%= @poll.inspect %>
+Poll #<%= @poll.id %> created by <%= @poll.etsy_username %>.
 
 <br><br><br>
 
-Poll Items Count: <%= @poll.items.count %>
-
-<br><br><br>
-
-Poll ItemsImageUrls Count: <%= ItemImageUrl.count %>
-
-<br><br><br>
-
-Etsy Items:
-<br>
-<%= @poll.items %>
+<ul>
+<% @poll.items.each do |item| %>
+  <li><%= image_tag item.item_image_urls.first.url %></li>
+<% end %>
+</ul>
