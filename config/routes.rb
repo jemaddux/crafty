@@ -1,6 +1,6 @@
 Crafty::Application.routes.draw do
   resources :polls
-  match "rate_item", to: "item#rate_item"
+  match "rate_item", to: "items#rate_item"
   match "etsy_login", to: "application#etsy_login"
   match "etsy_callback", to: "application#etsy_callback"
   root :to => "application#home"
