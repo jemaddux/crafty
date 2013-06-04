@@ -18,15 +18,14 @@ class Item < ActiveRecord::Base
 
   def self.rate(item_id, incoming_rating)
     item = Item.find(item_id)
-    if incoming_rating.to_f <= 5 && incoming_rating.to_f >= 0
+    if incoming_rating.to_f <= 5 && incoming_rating.to_f >= 0.00001
       new_rating = incoming_rating.to_f
+      total_rating = item.rating * item.times_rated
+      total_rating += new_rating
+      item.times_rated += 1
+      item.rating = total_rating / item.times_rated
+      item.save!
     else
-      new_rating = item.rating
     end
-    total_rating = item.rating * item.times_rated
-    total_rating += new_rating
-    item.times_rated += 1
-    item.rating = total_rating / item.times_rated
-    item.save!
   end
 end
