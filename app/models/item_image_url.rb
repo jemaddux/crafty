@@ -8,6 +8,9 @@ class ItemImageUrl < ActiveRecord::Base
     images.each do |image|
       iiu = ItemImageUrl.new
       iiu.url = image.result["url_570xN"]
+      iiu.small_url = image.result["url_75x75"]
+      iiu.medium_url = image.result["url_170x135"]
+      iiu.full_url = image.result["url_fullxfull"]
       iiu.primary_image = first
       iiu.item_id = item_id
       iiu.save!
