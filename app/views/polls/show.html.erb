@@ -1,4 +1,4 @@
-<div id="this-carousel-id" class="carousel slide">
+<div id="this-carousel-id" class="carousel slide" data-interval="false">
   <div class="carousel-inner">
     <% @poll.items.each_with_index do |item, index| %>
       <% if index == 0 %>
@@ -10,12 +10,14 @@
         <div class="carousel-caption">
           <p>
             <%= item.name %>
+            <br>
             Current Item Rating:
             <span id="<%= item.id %>">
               <%= item.rating %>
             </span>
+            <br>
+            Rate from 0-5
             <%= form_tag("/rate_item", method: "post", id: "#{item.id}", class: "form") do %>
-              <%= label_tag(:rating, "Rating (0-5):") %>
               <%= text_field_tag(:rating) %>
               <%= hidden_field_tag(:item_id, item.id) %>
               <%= submit_tag("Rate Item") %>
@@ -28,14 +30,6 @@
   <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
   <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
 </div>
-
-<script>
-  $(document).ready(function(){
-    $('.carousel').carousel({
-      interval: 999999999
-    });
-  });
-</script>
 
 <script type="text/javascript">
   $(document).ready(function(){

@@ -5970,7 +5970,7 @@ a.badge:focus {
 }
 
 .carousel {
-  width: 38%;
+  width: 37%;
   padding-top: 50px;
   margin: 0 auto;
   position: relative;
@@ -6097,7 +6097,7 @@ a.badge:focus {
 }
 
 .carousel-caption {
-  position: absolute;
+  position: relative;
   right: 0;
   bottom: 0;
   left: 0;
@@ -6117,7 +6117,7 @@ a.badge:focus {
 }
 
 .carousel-caption p {
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 .hero-unit {
