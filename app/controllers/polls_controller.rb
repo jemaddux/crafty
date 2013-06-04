@@ -1,4 +1,7 @@
 class PollsController < ApplicationController
+  def home
+  end
+
   def new
     @poll = Poll.new
   end
