@@ -6039,8 +6039,8 @@ a.badge:focus {
 
 .carousel-control {
   position: absolute;
-  top: 40%;
-  left: 15px;
+  top: 200px;
+  left: -85px;
   width: 40px;
   height: 40px;
   margin-top: -20px;
@@ -6049,7 +6049,7 @@ a.badge:focus {
   line-height: 30px;
   color: #ffffff;
   text-align: center;
-  background: #222222;
+  background: #22ff22;
   border: 3px solid #ffffff;
   -webkit-border-radius: 23px;
      -moz-border-radius: 23px;
@@ -6059,7 +6059,7 @@ a.badge:focus {
 }
 
 .carousel-control.right {
-  right: 15px;
+  right: -85px;
   left: auto;
 }
 
@@ -6102,8 +6102,8 @@ a.badge:focus {
   bottom: 0;
   left: 0;
   padding: 15px;
-  background: #333333;
-  background: rgba(0, 0, 0, 0.75);
+  background: #22cc22;
+  /*background: rgba(0, 0, 0, 0.75);*/
 }
 
 .carousel-caption h4,
