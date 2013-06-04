@@ -15,4 +15,18 @@ class Item < ActiveRecord::Base
 
     ItemImageUrl.create_from_etsy(item.listing_id, item.id)
   end
+
+  def self.rate(item_id, incoming_rating)
+    item = Item.find(item_id)
+    if incoming_rating.to_f <= 5 && incoming_rating.to_f >= 0
+      new_rating = incoming_rating.to_f
+    else
+      new_rating = item.rating
+    end
+    total_rating = item.rating * item.times_rated
+    total_rating += new_rating
+    item.times_rated += 1
+    item.rating = total_rating / item.times_rated
+    item.save!
+  end
 end
