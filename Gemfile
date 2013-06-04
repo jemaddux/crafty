@@ -18,6 +18,7 @@ end
 group :test, :development do
   gem 'sqlite3'
   gem 'better_errors'
+  gem 'simplecov'
 end
 
 # Bundle edge Rails instead:
