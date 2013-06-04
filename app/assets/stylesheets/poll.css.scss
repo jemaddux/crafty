@@ -5,8 +5,11 @@
 body{
   background-color: lightblue;
 }
-h1{
-
+.big_box{
+  border-radius: 15px;
+  background-color: white;
+  padding: 10px;
+  width: 70%;
 }
 #main_home{
   height: 400px;

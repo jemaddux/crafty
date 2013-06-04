@@ -1,19 +1,37 @@
-Poll #<%= @poll.id %> created by <%= @poll.etsy_username %>.
+<div id="this-carousel-id" class="carousel slide">
+  <div class="carousel-inner">
+    <% @poll.items.each_with_index do |item, index| %>
+      <% if index == 0 %>
+        <div class="item active">
+      <% else %>
+        <div class="item">
+      <% end %>
+        <%= image_tag item.item_image_urls.first.url %>
+        <div class="carousel-caption">
+          <p><%= item.name %></p>
+        </div>
 
-<br><br><br>
+        Item Rating: <span id="<%= item.id %>"><%= item.rating %></span><br>
+        <%= form_tag("/rate_item", method: "post", id: "#{item.id}", class: "form") do %>
+          <%= label_tag(:rating, "Rating (0-5):") %>
+          <%= text_field_tag(:rating) %>
+          <%= hidden_field_tag(:item_id, item.id) %>
+          <%= submit_tag("Rate Item") %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+  <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
+</div>
 
-<% @poll.items.each do |item| %>
-  <%= item.name %><br>
-  <%= image_tag item.item_image_urls.first.url %><br>
-  Item Rating: <span id="<%= item.id %>"><%= item.rating %></span><br>
-  <%= form_tag("/rate_item", method: "post", id: "#{item.id}", class: "form") do %>
-    <%= label_tag(:rating, "Rating (0-5):") %>
-    <%= text_field_tag(:rating) %>
-    <%= hidden_field_tag(:item_id, item.id) %>
-    <%= submit_tag("Rate Item") %>
-  <% end %>
-  <br><br><br>
-<% end %>
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel({
+      interval: 2000000
+    });
+  });
+</script>
 
 <script type="text/javascript">
   $(document).ready(function(){
