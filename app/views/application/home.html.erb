@@ -5,24 +5,3 @@
   <%= text_field_tag(:username) %>
   <%= submit_tag("Create Poll") %>
 <% end %>
-
-
-
-
-<%= @user.inspect if @user %>
-<br><br><br>
-
-<% if @images %>
-  <% @images.each do |image| %>
-    <%= image_tag image.result["url_570xN"] %>
-    <br><br>
-  <% end %>
-<% end %>
-<br><br><br>
-
-<% if @favs %>
-  <% @favs.each do |fav| %>
-    <%= fav.inspect %>
-    <br><br>
-  <% end %>
-<% end %>
