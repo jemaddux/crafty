@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130603174323) do
+ActiveRecord::Schema.define(:version => 20130604193317) do
 
   create_table "item_image_urls", :force => true do |t|
     t.integer  "item_id"
@@ -22,13 +22,13 @@ ActiveRecord::Schema.define(:version => 20130603174323) do
   end
 
   create_table "items", :force => true do |t|
-    t.string   "name"
+    t.text     "name"
     t.float    "rating",      :default => 0.0
     t.datetime "created_at",                   :null => false
     t.datetime "updated_at",                   :null => false
     t.integer  "poll_id"
     t.integer  "listing_id"
-    t.string   "description"
+    t.text     "description"
     t.integer  "times_rated"
   end
 
