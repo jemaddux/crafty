@@ -11,10 +11,12 @@ class ItemsController < ApplicationController
     item.times_rated += 1
     item.rating = total_rating / item.times_rated
     item.save!
+    redirect_to :back
   end
 
   def item_rating
-    item = Item.find(params[:item_id])
-    item.rating
+    item = Item.find(params[:id])
+    @rating = item.rating
+    render :json => @rating
   end
 end

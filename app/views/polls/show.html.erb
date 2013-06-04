@@ -5,9 +5,8 @@ Poll #<%= @poll.id %> created by <%= @poll.etsy_username %>.
 <% @poll.items.each do |item| %>
   <%= item.name %><br>
   <%= image_tag item.item_image_urls.first.url %><br>
-  Item Rating: <%= item.rating %><br>
-  Times Rated: <%= item.times_rated %><br>
-  <%= form_tag("/rate_item", method: "post", id: "poll#{item.id}", class: "form") do %>
+  Item Rating: <span id="<%= item.id %>"><%= item.rating %></span><br>
+  <%= form_tag("/rate_item", method: "post", id: "#{item.id}", class: "form") do %>
     <%= label_tag(:rating, "Rating (0-5):") %>
     <%= text_field_tag(:rating) %>
     <%= hidden_field_tag(:item_id, item.id) %>
@@ -26,6 +25,15 @@ Poll #<%= @poll.id %> created by <%= @poll.etsy_username %>.
         data: valuesToSubmit,
         dataType: "JSON"
       }).success(function(json){});
+
+      var id = $(this).attr('id');
+      $.ajax({
+        url: '/item_rating.json',
+        data: {'id': id},
+        dataType: 'JSON'
+      }).success(function(json){
+        $("#" + id).text(json);
+      });
     });
   });
 </script>
