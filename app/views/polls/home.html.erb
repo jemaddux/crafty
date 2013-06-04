@@ -7,8 +7,22 @@
 
   <p>Enter your Etsy username to get started:</p>
 
-  <%= form_tag("/polls", method: "post") do %>
+  <%= form_tag("/polls", method: "post", class: "form") do %>
     <%= text_field_tag(:username) %>
     <%= submit_tag("Go!") %>
   <% end %>
+
+  <span id="hidden">
+    <h4>Loading items from Etsy.... Please wait.</h4>
+  </span>
 </div>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#hidden").hide();
+    $(".form").submit(function(event){
+      $("#hidden").show();
+    });
+  });
+</script>
