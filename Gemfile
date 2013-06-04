@@ -19,6 +19,12 @@ group :test, :development do
   gem 'sqlite3'
   gem 'better_errors'
   gem 'simplecov'
+  gem 'rspec-rails'
+  gem 'cane'
+  gem 'reek'
+  gem 'vcr'
+  gem 'webmock'
+  gem 'database_cleaner'
 end
 
 # Bundle edge Rails instead:
