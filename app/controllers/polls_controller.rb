@@ -24,6 +24,10 @@ class PollsController < ApplicationController
     @poll = Poll.find(params[:id])
   end
 
+  def results
+    @poll = Poll.find(params[:id])
+  end
+
 private
   def initialize_etsy
     Etsy.api_key = 'zq28pq66whj2cp3tfy9lqz6x'

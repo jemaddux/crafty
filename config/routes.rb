@@ -1,5 +1,6 @@
 Crafty::Application.routes.draw do
   resources :polls
+  match "results/:id", to: "polls#results", as: "results"
   match "item_rating", to: "items#item_rating"
   match "rate_item", to: "items#rate_item"
   match "etsy_login", to: "application#etsy_login"
