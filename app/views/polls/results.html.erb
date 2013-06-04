@@ -1,0 +1,18 @@
+<%= @poll.items.first.inspect %>
+
+<br><br><br>
+
+<table border="2">
+  <tr>
+    <th>Image</th>
+    <th>Rating</th>
+    <th>Times Voted On</th>
+  </tr>
+  <% @poll.items.each do |item| %>
+    <tr>
+      <td>Picture here</td>
+      <td><%= item.rating %></td>
+      <td><%= item.times_rated %></td>
+    </tr>
+  <% end %>
+</table>

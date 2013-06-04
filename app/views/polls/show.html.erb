@@ -16,7 +16,7 @@
               <%= item.rating %>
             </span>
             <br>
-            Rate from 0-5
+            Rate from 1-5
             <%= form_tag("/rate_item", method: "post", id: "#{item.id}", class: "form") do %>
               <%= text_field_tag(:rating) %>
               <%= hidden_field_tag(:item_id, item.id) %>
@@ -30,6 +30,8 @@
   <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
   <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
 </div>
+
+<%= link_to("Results", results_path) %>
 
 <script type="text/javascript">
   $(document).ready(function(){
