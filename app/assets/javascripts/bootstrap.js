@@ -293,7 +293,7 @@
     this.options = options
     this.options.pause == 'hover' && this.$element
       .on('mouseenter', $.proxy(this.pause, this))
-      .on('mouseleave', $.proxy(this.cycle, this))
+      .on('mouseleave', $.proxy(this.pause, this))
   }
 
   Carousel.prototype = {
@@ -432,7 +432,7 @@
   }
 
   $.fn.carousel.defaults = {
-    interval: 5000
+    interval: false
   , pause: 'hover'
   }
 
