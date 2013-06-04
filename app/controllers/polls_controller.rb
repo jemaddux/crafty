@@ -19,32 +19,7 @@ class PollsController < ApplicationController
 
   def show
     @poll = Poll.find(params[:id])
-    # @image = Etsy::Image.find_all_by_listing_id(Item.first.listing_id)
   end
-
-  # def update
-  #   @poll = Poll.find(params[:id])
-
-  #   if @poll.update_attributes(params[:poll])
-  #     redirect_to @poll, notice: 'poll was successfully updated.'
-  #   else
-  #     render action: "edit"
-  #   end
-  # end
-
-  # def destroy
-  #   @poll = Poll.find(params[:id])
-  #   @poll.destroy
-  #   redirect_to polls_url
-  # end
-
-  # def index
-  #   @polls = Poll.all
-  # end
-
-  # def edit
-  #   @poll = Poll.find(params[:id])
-  # end
 
 private
   def initialize_etsy
