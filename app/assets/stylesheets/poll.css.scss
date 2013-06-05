@@ -2,8 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body{
-
+#results_table{
+  text-align: center;
+  margin: auto;
+}
+.span4{
+  background-color: #22dd22;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 #main_home{
   background-color: #22cc22;
