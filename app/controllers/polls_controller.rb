@@ -14,7 +14,7 @@ class PollsController < ApplicationController
     @poll.etsy
 
     if @poll.save
-      redirect_to "polls/#{@poll.id}/select"
+      redirect_to select_path(@poll)
       #redirect_to @poll, notice: 'poll was successfully created.'
     else
       render action: "new"
