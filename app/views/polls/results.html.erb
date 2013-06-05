@@ -11,7 +11,7 @@
       </p>
       <p><%= item.name %></p>
       <p>Times Rated:<%= item.times_rated %></p>
-      <p><%= link_to("Go Buy it on Etsy!", root_path) %></p>
+      <p><%= link_to("Go Buy it on Etsy!", item.listing_url) %></p>
     </div>
     <% if index%3 == 2 %>
       </div>
