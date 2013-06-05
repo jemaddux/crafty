@@ -32,7 +32,8 @@
 </div>
 
 <%= hidden_field_tag(:items_count, @poll.items.count, id: "items_count") %>
-<div id="success">Success! Thanks for voting. See the results so far.</div>
+<br><br><br><br>
+<div id="success"><p>Success! Thanks for voting. See the results so far. <br><br> <%= link_to("Go", results_path) %></p></div>
 
 <script type="text/javascript">
   $(document).ready(function(){
