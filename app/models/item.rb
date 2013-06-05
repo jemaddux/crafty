@@ -9,6 +9,7 @@ class Item < ActiveRecord::Base
     item.name = etsy_item.result["title"]
     item.rating = 0
     item.times_rated = 0
+    item.listing_url = etsy_item.result["url"]
     item.listing_id = etsy_item.result["listing_id"]
     item.description = etsy_item.result["description"]
     item.save!
