@@ -1,4 +1,4 @@
-<%= @poll.items.first.inspect %>
+
 
 <br><br><br>
 
@@ -8,9 +8,9 @@
     <th>Rating</th>
     <th>Times Voted On</th>
   </tr>
-  <% @poll.items.each do |item| %>
+  <% @results.each do |item| %>
     <tr>
-      <td>Picture here</td>
+      <td><%= image_tag item.item_image_urls.first.medium_url %></td>
       <td><%= item.rating %></td>
       <td><%= item.times_rated %></td>
     </tr>

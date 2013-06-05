@@ -25,7 +25,8 @@ class PollsController < ApplicationController
   end
 
   def results
-    @poll = Poll.find(params[:id])
+    poll = Poll.find(params[:id])
+    @results = poll.items.sort_by{|p| p.rating}.reverse
   end
 
 private

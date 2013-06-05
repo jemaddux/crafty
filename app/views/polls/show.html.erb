@@ -13,14 +13,14 @@
             <br>
             Current Item Rating:
             <span id="<%= item.id %>">
-              <%= item.rating %>
+              <%= humanize_number(item.rating) %>
             </span>
             <br>
-            Rate from 1-5
+            Rate from 1-5:
             <%= form_tag("/rate_item", method: "post", id: "#{item.id}", class: "form") do %>
               <%= text_field_tag(:rating) %>
               <%= hidden_field_tag(:item_id, item.id) %>
-              <%= submit_tag("Rate Item") %>
+              <%= submit_tag("Rate") %>
             <% end %>
           </p>
         </div>
@@ -31,7 +31,6 @@
   <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
 </div>
 
-<%= link_to("Results", results_path) %>
 
 <script type="text/javascript">
   $(document).ready(function(){
@@ -52,6 +51,25 @@
       }).success(function(json){
         $("#" + id).text(json);
       });
+    });
+  });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(function() {
+      $.fn.raty.defaults.path = 'public';
+      $('.star').raty({
+        cancel   : false,
+        cancelOff: 'cancel-off-big.png',
+        cancelOn : 'cancel-on-big.png',
+        half     : true,
+        size     : 24,
+        starHalf : 'star-half-big.png',
+        starOff  : 'star-off-big.png',
+        starOn   : 'star-on-big.png',
+        half     : true,
+        path     : 'img'});
     });
   });
 </script>
