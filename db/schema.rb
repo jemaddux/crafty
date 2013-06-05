@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130604201318) do
+ActiveRecord::Schema.define(:version => 20130605204521) do
 
   create_table "item_image_urls", :force => true do |t|
     t.integer  "item_id"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(:version => 20130604201318) do
     t.integer  "listing_id"
     t.text     "description"
     t.integer  "times_rated"
+    t.text     "listing_url"
   end
 
   create_table "polls", :force => true do |t|
