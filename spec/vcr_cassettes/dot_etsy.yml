@@ -1,0 +1,1950 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/users/johnmaddux?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:57:57 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9150'
+      X-Etsy-Request-Uuid:
+      - t5QSCIKCwuXZnOZbPur1zfw_tcje
+      Content-Length:
+      - '228'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"user_id":34003418,"login_name":"johnmaddux","creation_tsz":1369856645,"referred_by_user_id":null,"feedback_info":{"count":0,"score":null}}],"params":{"user_id":"johnmaddux"},"type":"User","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:57:57 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/users/34003418/favorites/listings?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:57:57 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9149'
+      X-Etsy-Request-Uuid:
+      - xFNHgrl7l-8_H8xDigtiw65Z2m1z
+      Content-Length:
+      - '3175'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":18,"results":[{"listing_id":119352771,"user_id":34003418,"listing_state":"active","create_date":1369932351,"state":"active","creation_tsz":1369932351,"favorite_listing_id":null},{"listing_id":121136141,"user_id":34003418,"listing_state":"active","create_date":1369932346,"state":"active","creation_tsz":1369932346,"favorite_listing_id":null},{"listing_id":103253606,"user_id":34003418,"listing_state":"active","create_date":1369932280,"state":"active","creation_tsz":1369932280,"favorite_listing_id":null},{"listing_id":150263973,"user_id":34003418,"listing_state":"active","create_date":1369932223,"state":"active","creation_tsz":1369932223,"favorite_listing_id":null},{"listing_id":115197655,"user_id":34003418,"listing_state":"active","create_date":1369932180,"state":"active","creation_tsz":1369932180,"favorite_listing_id":null},{"listing_id":151665957,"user_id":34003418,"listing_state":"active","create_date":1369931931,"state":"active","creation_tsz":1369931931,"favorite_listing_id":null},{"listing_id":127446686,"user_id":34003418,"listing_state":"active","create_date":1369931902,"state":"active","creation_tsz":1369931902,"favorite_listing_id":null},{"listing_id":151794557,"user_id":34003418,"listing_state":"active","create_date":1369931545,"state":"active","creation_tsz":1369931545,"favorite_listing_id":null},{"listing_id":54915863,"user_id":34003418,"listing_state":"active","create_date":1369931492,"state":"active","creation_tsz":1369931492,"favorite_listing_id":null},{"listing_id":151668265,"user_id":34003418,"listing_state":"active","create_date":1369931472,"state":"active","creation_tsz":1369931472,"favorite_listing_id":null},{"listing_id":128652051,"user_id":34003418,"listing_state":"active","create_date":1369931453,"state":"active","creation_tsz":1369931453,"favorite_listing_id":null},{"listing_id":61856826,"user_id":34003418,"listing_state":"active","create_date":1369931427,"state":"active","creation_tsz":1369931427,"favorite_listing_id":null},{"listing_id":126162227,"user_id":34003418,"listing_state":"active","create_date":1369931343,"state":"active","creation_tsz":1369931343,"favorite_listing_id":null},{"listing_id":118875317,"user_id":34003418,"listing_state":"active","create_date":1369931290,"state":"active","creation_tsz":1369931290,"favorite_listing_id":null},{"listing_id":129013763,"user_id":34003418,"listing_state":"active","create_date":1369931264,"state":"active","creation_tsz":1369931264,"favorite_listing_id":null},{"listing_id":91427311,"user_id":34003418,"listing_state":"active","create_date":1369931248,"state":"active","creation_tsz":1369931248,"favorite_listing_id":null},{"listing_id":80648022,"user_id":34003418,"listing_state":"active","create_date":1369931239,"state":"active","creation_tsz":1369931239,"favorite_listing_id":null},{"listing_id":112511770,"user_id":34003418,"listing_state":"active","create_date":1369931187,"state":"active","creation_tsz":1369931187,"favorite_listing_id":null}],"params":{"user_id":"34003418","limit":25,"offset":0,"page":null},"type":"FavoriteListing","pagination":{"effective_limit":25,"effective_offset":0,"next_offset":null,"effective_page":1,"next_page":null}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:57:57 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/119352771?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:57:57 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9148'
+      X-Etsy-Request-Uuid:
+      - U9z7Yzk6Xp5ypZs4n-nxARNEaf-9
+      Content-Length:
+      - '3603'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"listing_id":119352771,"state":"active","user_id":20513122,"category_id":68891054,"title":"2
+        Flasks, Groomsmen Flasks, Personalized Groomsmen Gifts, Engraved Stainless
+        Steel Flasks, Best Man Gift, 2 Flasks","description":"From groomsmen gifts,
+        to birthdays and parties, our personalized flasks will help you celebrate
+        in style! Designed to carry liquor, our 6 oz. black, powder coated flasks
+        are made of stainless steel. Our state-of-the-art laser engraves the powder
+        coating resulting in a durable, beautiful silver finish, which shines in any
+        light. Each personalized flask includes a deluxe black velvet pouch adding
+        that unique touch of appreciation for that special day. Our listing is for
+        TWO personalized flasks with pouches, of the above design.\r\n\r\nSize: each
+        flask measures approximately 3-1\/2&quot; wide x 4&quot; tall. \r\n\r\nWhen
+        you place your order, please specify all engraving information under &#39;note
+        to engravingpro&#39; in the format below, and if you would like a variation
+        of the above flask design.\r\n\r\n1) Name;\r\n2) Title;\r\n3) Wedding date.\r\n\r\nPlease
+        look through our shop, we offer many other engraving designs for flasks! We
+        also offer custom design, please contact us via &#39;Etsy conversation&#39;
+        for more information.\r\n\r\nMost orders are ready and shipped within 7 business
+        days after receiving payment. International orders are welcome. Contact us
+        via &#39;Etsy conversation&#39; if this is a RUSH ORDER. \r\n\r\nThank you
+        for visiting our shop!\r\n\r\nIf you would like a different quantity of flasks,
+        contact us via &#39;Etsy converstation&#39; or click on one of the following
+        links:\r\n\r\n1 Flask: https:\/\/www.etsy.com\/listing\/109463172\/personalized-groomsmen-gift-engraved\r\n2
+        Flasks: https:\/\/www.etsy.com\/listing\/119352771\/groomsmen-flask-personalized-groomsmen\r\n3
+        Flasks: https:\/\/www.etsy.com\/listing\/106422416\/groomsmen-flask-personalized-groomsmen\r\n4
+        Flasks: https:\/\/www.etsy.com\/listing\/119362136\/personalized-groomsmen-gift-engraved\r\n5
+        Flasks: https:\/\/www.etsy.com\/listing\/116984313\/personalized-groomsmen-gifts-flask\r\n6
+        Flasks: http:\/\/www.etsy.com\/listing\/119308604\/personalized-groomsmen-gift-engraved\r\n\r\n*
+        * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+        * * * * * * * * * * * * * * * * * * * * * * * *\r\nReview my shop policies
+        here:\r\nhttp:\/\/www.etsy.com\/shop\/EngravingPro\/policy?ref=shopinfo_policies_leftnav","creation_tsz":1368810454,"ending_tsz":1379390400,"original_creation_tsz":1357179819,"last_modified_tsz":1368810454,"price":"34.00","currency_code":"USD","quantity":1,"tags":["groomsmen
+        gift","custom engraved","personalized","personalized gift","Birthday gift","bridesmaids
+        gift","stainless flask","personalized flask","engraved flask","flask engraved","black
+        and silver","black steel flask","groomsmen flask"],"category_path":["Weddings","Men"],"category_path_ids":[68887494,68891054],"materials":["stainless
+        steel"],"shop_section_id":11306815,"featured_rank":0,"state_tsz":1368810454,"url":"http:\/\/www.etsy.com\/listing\/119352771\/2-flasks-groomsmen-flasks-personalized?utm_source=craftable&utm_medium=api&utm_campaign=api","views":321,"num_favorers":19,"processing_min":5,"processing_max":10,"who_made":"i_did","is_supply":"false","when_made":"made_to_order","is_private":false,"recipient":"unisex_adults","occasion":"wedding","style":["personalized","custom
+        engraved"],"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false}],"params":{"listing_id":"119352771"},"type":"Listing","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:57:57 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/119352771/images?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:57:57 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9147'
+      X-Etsy-Request-Uuid:
+      - BoB5_PdN_oaM799-LciLpLFvrkL8
+      Content-Length:
+      - '1315'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":2,"results":[{"listing_image_id":429471227,"hex_code":"3D3D3B","red":61,"green":61,"blue":59,"hue":60,"saturation":3,"brightness":23,"is_black_and_white":false,"creation_tsz":1361314780,"listing_id":119352771,"rank":1,"url_75x75":"http:\/\/img3.etsystatic.com\/014\/0\/6815820\/il_75x75.429471227_9buy.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/014\/0\/6815820\/il_170x135.429471227_9buy.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/014\/0\/6815820\/il_570xN.429471227_9buy.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/014\/0\/6815820\/il_fullxfull.429471227_9buy.jpg","full_height":667,"full_width":691},{"listing_image_id":429471125,"hex_code":"42413F","red":66,"green":65,"blue":63,"hue":40,"saturation":4,"brightness":25,"is_black_and_white":false,"creation_tsz":1361314780,"listing_id":119352771,"rank":2,"url_75x75":"http:\/\/img1.etsystatic.com\/011\/0\/6815820\/il_75x75.429471125_7vrl.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/011\/0\/6815820\/il_170x135.429471125_7vrl.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/011\/0\/6815820\/il_570xN.429471125_7vrl.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/011\/0\/6815820\/il_fullxfull.429471125_7vrl.jpg","full_height":667,"full_width":691}],"params":{"listing_id":"119352771"},"type":"ListingImage","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:57:57 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/121136141?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:57:58 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9146'
+      X-Etsy-Request-Uuid:
+      - zvtQqpZx4GZ_cY6jZLomshnxWOOQ
+      Content-Length:
+      - '5188'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"listing_id":121136141,"state":"active","user_id":16507917,"category_id":69169135,"title":"8
+        Classy Brown Groomsmen Gift Engraved LEATHER WRAPPED FLASK 6 oz Stainless
+        Steel Groomsman Gift Custom Personalized Bridesmaid Gift","description":"You
+        Will Love These 8 Amazing High Quality Stainless Steel 6oz Faux Leather Wrapped
+        Flask!!!!!!!\r\n\r\nAll engraving is included in the price.\r\n\r\nYour friends
+        will truly envy you when you show them your unique custom engraved Flask.\r\nYour
+        Choice of Color\r\nThe Color!!!\r\nThe Only Limit You Have is Your Imagination...........\r\n\r\nVisit
+        my other Items for other great imprinted products and gift ideas!\r\n\r\nProduct
+        Description\r\n\r\n\u2022 This listing is for 8 Stainless Steel 6oz Flask
+        with free engraving.\r\n\u2022 All of our items are diamond tip engraved for
+        optimal quality. Beware of other methods that just burn the color off. They
+        tend to wear out quickly and become hard to read.\r\n\u2022 The default font
+        is Times New Roman.\r\n\r\n\r\n\r\nPurchase your Flask now by following the
+        3 easy steps below!!!\r\n\r\n\r\n\r\nSTEP #1 - Buy\r\n\r\n1. Click on the
+        \u201cBuy it Now\u201d button.\r\n\r\n2. Enter the quantity you want to buy,
+        then click continue.\r\n\r\n3. Click \u201cCommit to Buy\u201d.\r\n\r\nSTEP
+        #2 \u2013 Pay\r\n\r\n1. After you have purchased the lighter, go to the item
+        page and click \u201cPay Now\u201d.\r\n\r\n2. Follow instructions to pay using
+        Paypal or Etsy Payment Account.\r\n\r\nSTEP #3 \u2013 Submit Engraving Information\r\n\r\n1.
+        The engraving information can be sent in the \u201cNote to Seller\u201d section
+        with your Paypal payment, or by sending us a message using messages or by
+        email.\r\n\r\n2. The engraving information must include image and \/or text
+        wanted. If you want text on the lighter, please let us know what font you
+        want from the font list picture. If you want a combination of text and a photo,
+        please let us know if you want the text above or below the image.\r\n\r\n3.
+        We will engrave whatever you want on the item. Just remember, more lines and
+        characters means smaller text. We will contact you in the event that the requested
+        information will not fit on the lighter.\r\n\r\n4. We engrave exactly what
+        you send us so please check your spelling and capitalization.\r\n\r\n\r\nGeneral
+        Policies\r\n\u2022The graphic and font are optional. If the buyer doesn\u2019t
+        submit their choices within 24 hours of making the payment, the default is
+        no graphic and standard font.\r\n\u2022Most fonts can be engraved in upper
+        and lower case letters. Some fonts are only able to do all upper or all lower
+        case letters.\r\n\u2022If you have any questions please contact us via email
+        prior to bidding or purchasing the item.\r\n\u2022All emails will be answered
+        within 24 hours.\r\n\u2022Engraving information cannot be revised after it
+        has been submitted. Please verify all information prior to sending.\r\n\u2022If
+        you are not completely satisfied please give us an opportunity to make it
+        right before you leave negative feedback. Our goal is 100% customer satisfaction.
+        Contact us and we will do everything in our power to correct the issue.\r\n\r\n\r\nTerms
+        and Conditions\r\n\r\n\u2022We ship to your Etsy address. Please make sure
+        that the address listed in your Etsy account address is correct!!!\r\n\u2022After
+        payment and all engraving information has been received, please allow 1 to
+        2 days for processing time for shipments.\r\n\u2022 We do not allow orders
+        to be canceled because as soon as the purchase is made we start engraving
+        the product. Returns must be shipped back within 7 days of the time the buyer
+        received the product. Shipping and handling costs are not refundable.\r\n\r\nShipping\r\n\u2022All
+        shipping is done through the USPS First Class Mail (2-5 business day delivery).
+        Shipping and handling is $3.00 for the US. We are not responsible for transit
+        time.\r\n\u2022We ship Monday \u2013 Friday.\r\n\u2022We do not provide a
+        tracking number unless you request and pay for priority shipping.\r\n\r\nThanks","creation_tsz":1367717086,"ending_tsz":1378267200,"original_creation_tsz":1358734159,"last_modified_tsz":1367717086,"price":"99.99","currency_code":"USD","quantity":51,"tags":["diamond
+        engraved","anniversary gift","liquor flask","flask","engraved flask","personalized
+        flask","personalized","groomsman gift","etched flask","Bridesmaid Gift","Leather
+        Wrapped","Groomsmen Gift","Brown Flask"],"category_path":["Weddings","Favor","Accessories"],"category_path_ids":[68887494,68892294,69169135],"materials":["diamond","engraved","Stainless
+        Steel","Faux Leather"],"shop_section_id":10478429,"featured_rank":0,"state_tsz":1358734159,"url":"http:\/\/www.etsy.com\/listing\/121136141\/8-classy-brown-groomsmen-gift-engraved?utm_source=craftable&utm_medium=api&utm_campaign=api","views":115,"num_favorers":14,"processing_min":1,"processing_max":2,"who_made":"i_did","is_supply":"false","when_made":"made_to_order","is_private":false,"recipient":null,"occasion":null,"style":["Modern","Retro"],"non_taxable":false,"is_digital":false,"file_data":"","has_variations":true}],"params":{"listing_id":"121136141"},"type":"Listing","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:57:58 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/121136141/images?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:57:58 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9145'
+      X-Etsy-Request-Uuid:
+      - uen79lkqZTbEgqHmBU9kqalhMuaL
+      Content-Length:
+      - '3141'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":5,"results":[{"listing_image_id":398005314,"hex_code":"614A48","red":97,"green":74,"blue":72,"hue":5,"saturation":25,"brightness":38,"is_black_and_white":false,"creation_tsz":1358734159,"listing_id":121136141,"rank":1,"url_75x75":"http:\/\/img2.etsystatic.com\/005\/1\/6534731\/il_75x75.398005314_fl7j.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/005\/1\/6534731\/il_170x135.398005314_fl7j.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/005\/1\/6534731\/il_570xN.398005314_fl7j.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/005\/1\/6534731\/il_fullxfull.398005314_fl7j.jpg","full_height":1125,"full_width":1500},{"listing_image_id":397999807,"hex_code":"685A66","red":104,"green":90,"blue":102,"hue":309,"saturation":13,"brightness":40,"is_black_and_white":false,"creation_tsz":1358734159,"listing_id":121136141,"rank":2,"url_75x75":"http:\/\/img3.etsystatic.com\/005\/1\/6534731\/il_75x75.397999807_e00d.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/005\/1\/6534731\/il_170x135.397999807_e00d.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/005\/1\/6534731\/il_570xN.397999807_e00d.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/005\/1\/6534731\/il_fullxfull.397999807_e00d.jpg","full_height":1125,"full_width":1500},{"listing_image_id":397999609,"hex_code":"685B6D","red":104,"green":91,"blue":109,"hue":283,"saturation":16,"brightness":42,"is_black_and_white":false,"creation_tsz":1358734159,"listing_id":121136141,"rank":3,"url_75x75":"http:\/\/img1.etsystatic.com\/001\/1\/6534731\/il_75x75.397999609_389g.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/001\/1\/6534731\/il_170x135.397999609_389g.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/001\/1\/6534731\/il_570xN.397999609_389g.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/001\/1\/6534731\/il_fullxfull.397999609_389g.jpg","full_height":1125,"full_width":1500},{"listing_image_id":342709966,"hex_code":"EAEAEA","red":234,"green":234,"blue":234,"hue":0,"saturation":0,"brightness":91,"is_black_and_white":false,"creation_tsz":1358734159,"listing_id":121136141,"rank":4,"url_75x75":"http:\/\/img2.etsystatic.com\/000\/0\/6534731\/il_75x75.342709966.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/000\/0\/6534731\/il_170x135.342709966.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/000\/0\/6534731\/il_570xN.342709966.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/000\/0\/6534731\/il_fullxfull.342709966.jpg","full_height":647,"full_width":467},{"listing_image_id":398005534,"hex_code":"303032","red":48,"green":48,"blue":50,"hue":240,"saturation":4,"brightness":19,"is_black_and_white":false,"creation_tsz":1358734159,"listing_id":121136141,"rank":5,"url_75x75":"http:\/\/img2.etsystatic.com\/008\/0\/6534731\/il_75x75.398005534_cfb4.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/008\/0\/6534731\/il_170x135.398005534_cfb4.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/008\/0\/6534731\/il_570xN.398005534_cfb4.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/008\/0\/6534731\/il_fullxfull.398005534_cfb4.jpg","full_height":1125,"full_width":1500}],"params":{"listing_id":"121136141"},"type":"ListingImage","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:57:58 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/103253606?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:57:58 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9144'
+      X-Etsy-Request-Uuid:
+      - 8hliNaUvMKyxH_v022G6BDXvwRaI
+      Content-Length:
+      - '2522'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"listing_id":103253606,"state":"active","user_id":17118276,"category_id":69194661,"title":"8
+        Personalized Bridesmaid and Groomsman Shot Glasses- Great Bridesmaid Gift
+        and Groomsmen Gift","description":"Fun Wedding Personalized shot glass. Set
+        of 8 glasses.\r\n\r\nPerfect for bridal showers, wedding party gifts or for
+        celebrating that last night out on the town before the big day!\r\n\r\nEach
+        shot glass can be personalized with your choice of dress and bow color.  Just
+        pick your colors using our color chart.\r\n\r\nWe always want to accommodate
+        all of your needs; no order is too small or too large.  If you need a custom
+        order, I will be happy to create a custom listing just for you.  Just convo
+        me for any requests or if you have any questions.\r\n\r\nOur custom shot glasses
+        are made using professional equipment using the highest quality vinyl that
+        will last a minimum of 6 years.  We always recommend hand washing to ensure
+        that you receive the best results.\r\n\r\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\nIn
+        order to complete your order, please provide the following information in
+        the NOTE TO SELLER box when you are checking out:\r\n\r\nDress Color:\r\nBow
+        Color:\r\nName on Glass:\r\n\r\nPlease check out our other listings for great
+        hostess gifts, groomsmen gifts or wedding items that you may need for your
+        special day.\r\n\r\nThanks so much for visiting Alisha&#39;s Designs!!!","creation_tsz":1369610759,"ending_tsz":1380168000,"original_creation_tsz":1340984673,"last_modified_tsz":1370272029,"price":"48.00","currency_code":"USD","quantity":8,"tags":["Shot
+        Glass","Bridal Party","Wedding","Bride","Bridesmaid","Groom","Bachelorette","Personalized","Monogrammed","Groomsmen","Groomsman","Bridesmaid
+        Gift","Bridesmaids Gifts"],"category_path":["Glass","Glassware","Shot"],"category_path_ids":[69150361,68891932,69194661],"materials":["glass","vinyl","Shot
+        glass"],"shop_section_id":11427108,"featured_rank":0,"state_tsz":1367248444,"url":"http:\/\/www.etsy.com\/listing\/103253606\/8-personalized-bridesmaid-and-groomsman?utm_source=craftable&utm_medium=api&utm_campaign=api","views":1785,"num_favorers":112,"processing_min":5,"processing_max":10,"who_made":"i_did","is_supply":"false","when_made":"made_to_order","is_private":false,"recipient":"women","occasion":"wedding","style":["Modern"],"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false}],"params":{"listing_id":"103253606"},"type":"Listing","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:57:59 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/103253606/images?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:57:59 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9143'
+      X-Etsy-Request-Uuid:
+      - OX-QJXNbCF5Ze_NW5kxQbruArFJ3
+      Content-Length:
+      - '2491'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":4,"results":[{"listing_image_id":352218278,"hex_code":"696A66","red":105,"green":106,"blue":102,"hue":75,"saturation":3,"brightness":41,"is_black_and_white":false,"creation_tsz":1340984673,"listing_id":103253606,"rank":1,"url_75x75":"http:\/\/img2.etsystatic.com\/000\/0\/6566804\/il_75x75.352218278.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/000\/0\/6566804\/il_170x135.352218278.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/000\/0\/6566804\/il_570xN.352218278.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/000\/0\/6566804\/il_fullxfull.352218278.jpg","full_height":468,"full_width":1024},{"listing_image_id":352217487,"hex_code":"70696A","red":112,"green":105,"blue":106,"hue":351,"saturation":6,"brightness":43,"is_black_and_white":false,"creation_tsz":1340984673,"listing_id":103253606,"rank":2,"url_75x75":"http:\/\/img3.etsystatic.com\/000\/0\/6566804\/il_75x75.352217487.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/000\/0\/6566804\/il_170x135.352217487.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/000\/0\/6566804\/il_570xN.352217487.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/000\/0\/6566804\/il_fullxfull.352217487.jpg","full_height":622,"full_width":1024},{"listing_image_id":352218334,"hex_code":"717573","red":113,"green":117,"blue":115,"hue":150,"saturation":3,"brightness":45,"is_black_and_white":false,"creation_tsz":1340984673,"listing_id":103253606,"rank":3,"url_75x75":"http:\/\/img2.etsystatic.com\/000\/0\/6566804\/il_75x75.352218334.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/000\/0\/6566804\/il_170x135.352218334.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/000\/0\/6566804\/il_570xN.352218334.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/000\/0\/6566804\/il_fullxfull.352218334.jpg","full_height":700,"full_width":875},{"listing_image_id":441832898,"hex_code":"A9AD9D","red":169,"green":173,"blue":157,"hue":75,"saturation":9,"brightness":67,"is_black_and_white":false,"creation_tsz":1364216209,"listing_id":103253606,"rank":4,"url_75x75":"http:\/\/img2.etsystatic.com\/010\/0\/6566804\/il_75x75.441832898_5616.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/010\/0\/6566804\/il_170x135.441832898_5616.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/010\/0\/6566804\/il_570xN.441832898_5616.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/010\/0\/6566804\/il_fullxfull.441832898_5616.jpg","full_height":1500,"full_width":1370}],"params":{"listing_id":"103253606"},"type":"ListingImage","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:57:59 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/150263973?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:57:59 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9142'
+      X-Etsy-Request-Uuid:
+      - b6QKqBU6PaI92SyG8-Nm6OVX3I_G
+      Content-Length:
+      - '2984'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"listing_id":150263973,"state":"active","user_id":23493987,"category_id":69150425,"title":"Set
+        of 8 Beer Sign Bottle Openers- groomsmen gift idea - Free Shipping","description":"This
+        listing includes eight (8) of the signs shown in the picture. You pay only
+        the price of the item and receive FREE shipping, a savings of $85 if you were
+        to purchase them individually. This is for domestic orders, but we will give
+        discounted shipping to international orders if you convo us first. This sign
+        says &quot;THE BEST BEER IS AN OPEN BEER.&quot; It has a bottle opener attached,
+        ready to make any beer a good one. There is a cap bin at the bottom to catch
+        your bottle tops when you open your beer. It pivots on hinges so that the
+        bottom opens to dump the caps out when the bin is full.\r\n\r\nWe have many
+        bottle opener signs in different sizes and styles. Check them out in the BOTTLE
+        OPENERS section of our shop. You can jump over that section through this link:\r\n\r\nhttp:\/\/www.etsy.com\/shop\/RusticVision?section_id=12226569\r\n\r\nAvailable
+        in any of the 3 color combinations in the last picture. You will be able to
+        choose which option you want when you are checking out. \r\n\r\nIt will fit
+        in great with any rustic decor. Put it near your bar, in your man cave, garage,
+        or kitchen. It comes stained, painted, and ready to hang on your wall.\r\n\r\nReady
+        to ship within 10-12 days of *cleared* payment. Feel free to contact me if
+        you need your order expedited and we&#39;ll see what we can do! :)\r\n\r\nIf
+        you live in Alaska, Hawaii OR would like shipping upgrades, as in Priority,
+        Expedited, or Insurance, please contact me BEFORE checkout so I can customize
+        the listing to reflect the correct shipping fee. Or go ahead and purchase
+        the items and I will just invoice you for the price difference. Items will
+        ship after payments and additional invoices have cleared.\r\n\r\nPlease read
+        over my Shop Policies to learn more about my items, shipping, payment and
+        returns.","creation_tsz":1369956028,"ending_tsz":1380513600,"original_creation_tsz":1367688882,"last_modified_tsz":1369956028,"price":"280.00","currency_code":"USD","quantity":99,"tags":["Man
+        Gift","Sign","Wood","Rustic","Wood Sign","reclaimed wood","Beer","Bottle opener","beer
+        sign","beer opener","groomsmen gift","gift idea","octoberfest"],"category_path":["Housewares"],"category_path_ids":[69150425],"materials":["Wood","Stain","Paint"],"shop_section_id":12226569,"featured_rank":0,"state_tsz":1367688882,"url":"http:\/\/www.etsy.com\/listing\/150263973\/set-of-8-beer-sign-bottle-openers?utm_source=craftable&utm_medium=api&utm_campaign=api","views":97,"num_favorers":7,"processing_min":5,"processing_max":10,"who_made":"i_did","is_supply":"false","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":["Rustic"],"non_taxable":false,"is_digital":false,"file_data":"","has_variations":true}],"params":{"listing_id":"150263973"},"type":"Listing","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:57:59 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/150263973/images?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:57:59 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9141'
+      X-Etsy-Request-Uuid:
+      - n_FqTWQsk83yNBHJkYYBt_n2xHHz
+      Content-Length:
+      - '3166'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":5,"results":[{"listing_image_id":455752172,"hex_code":"87684A","red":135,"green":104,"blue":74,"hue":30,"saturation":45,"brightness":52,"is_black_and_white":false,"creation_tsz":1367688882,"listing_id":150263973,"rank":1,"url_75x75":"http:\/\/img0.etsystatic.com\/015\/1\/7127424\/il_75x75.455752172_iumv.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/015\/1\/7127424\/il_170x135.455752172_iumv.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/015\/1\/7127424\/il_570xN.455752172_iumv.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/015\/1\/7127424\/il_fullxfull.455752172_iumv.jpg","full_height":1500,"full_width":1499},{"listing_image_id":455756241,"hex_code":"916B4A","red":145,"green":107,"blue":74,"hue":28,"saturation":48,"brightness":56,"is_black_and_white":false,"creation_tsz":1367688882,"listing_id":150263973,"rank":2,"url_75x75":"http:\/\/img1.etsystatic.com\/009\/0\/7127424\/il_75x75.455756241_7fqw.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/009\/0\/7127424\/il_170x135.455756241_7fqw.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/009\/0\/7127424\/il_570xN.455756241_7fqw.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/009\/0\/7127424\/il_fullxfull.455756241_7fqw.jpg","full_height":1500,"full_width":1498},{"listing_image_id":429103552,"hex_code":"B49773","red":180,"green":151,"blue":115,"hue":33,"saturation":36,"brightness":70,"is_black_and_white":false,"creation_tsz":1367688882,"listing_id":150263973,"rank":3,"url_75x75":"http:\/\/img0.etsystatic.com\/009\/0\/7127424\/il_75x75.429103552_2x5a.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/009\/0\/7127424\/il_170x135.429103552_2x5a.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/009\/0\/7127424\/il_570xN.429103552_2x5a.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/009\/0\/7127424\/il_fullxfull.429103552_2x5a.jpg","full_height":569,"full_width":570},{"listing_image_id":429103568,"hex_code":"947F65","red":148,"green":127,"blue":101,"hue":33,"saturation":31,"brightness":58,"is_black_and_white":false,"creation_tsz":1367688882,"listing_id":150263973,"rank":4,"url_75x75":"http:\/\/img0.etsystatic.com\/009\/0\/7127424\/il_75x75.429103568_4z34.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/009\/0\/7127424\/il_170x135.429103568_4z34.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/009\/0\/7127424\/il_570xN.429103568_4z34.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/009\/0\/7127424\/il_fullxfull.429103568_4z34.jpg","full_height":428,"full_width":570},{"listing_image_id":429103782,"hex_code":"8B8476","red":139,"green":132,"blue":118,"hue":40,"saturation":15,"brightness":54,"is_black_and_white":false,"creation_tsz":1367688882,"listing_id":150263973,"rank":5,"url_75x75":"http:\/\/img2.etsystatic.com\/012\/0\/7127424\/il_75x75.429103782_mjvx.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/012\/0\/7127424\/il_170x135.429103782_mjvx.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/012\/0\/7127424\/il_570xN.429103782_mjvx.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/012\/0\/7127424\/il_fullxfull.429103782_mjvx.jpg","full_height":1500,"full_width":1498}],"params":{"listing_id":"150263973"},"type":"ListingImage","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:57:59 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/115197655?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:57:59 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9140'
+      X-Etsy-Request-Uuid:
+      - 2tuIWdo-mlCte6klvRGXJeTclgoP
+      Content-Length:
+      - '2392'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"listing_id":115197655,"state":"active","user_id":20513122,"category_id":68891054,"title":"Engraved
+        Pocket Knife, Personalized Groomsmen Gift, Ring Bearer Gift, Graduation Gift,
+        1 Knife","description":"Perfect for a groomsmen gift, a ring bearer or Birthday
+        gift! This listing is for one personalized engraved pocket knife. The knife  includes
+        ten tools, a reamer, file, scraper, phillips head screwdriver, flat head screwdriver,
+        can opener, blue LED light, scissors, saw and knife. The pocket knife also
+        includes a split ring for added convenience. \r\n\r\nLaser Engraving will
+        reveal a frosty white tone for excellent contrast. \r\n\r\nSize: the pocket
+        knife measures 3-1\/2&quot; x 3\/4&quot; x 3\/4&quot; folded. \r\n\r\nProvide
+        us with your customizable choice of laser-engraving on one side of the knife
+        -see font options or (contact us via &#39;Etsy conversations&#39; to specify
+        details of the text or image you&#39;d like). \r\n\r\nMost orders are ready
+        and shipped within 5 business days after receiving payment.\r\n\r\nThank you
+        for visiting our shop!\r\n\r\n* * * * * * * * * * * * * * * * * * * * * *
+        * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+        * * *\r\nReview shop policies here:\r\nhttp:\/\/www.etsy.com\/shop\/EngravingPro\/policy?ref=shopinfo_policies_leftnav","creation_tsz":1370316628,"ending_tsz":1380772800,"original_creation_tsz":1353050831,"last_modified_tsz":1370316628,"price":"22.00","currency_code":"USD","quantity":1,"tags":["groomsmen
+        gift","engraved knife","graduation gift","custom engraved","personalized","personalized
+        knife","engraved wood knife","personalized gift","EngravingPRO","Birthday
+        gift","pocket knives","pocket knife","blue"],"category_path":["Weddings","Men"],"category_path_ids":[68887494,68891054],"materials":["steel"],"shop_section_id":11307231,"featured_rank":0,"state_tsz":1370232823,"url":"http:\/\/www.etsy.com\/listing\/115197655\/engraved-pocket-knife-personalized?utm_source=craftable&utm_medium=api&utm_campaign=api","views":484,"num_favorers":56,"processing_min":3,"processing_max":5,"who_made":"i_did","is_supply":"false","when_made":"made_to_order","is_private":false,"recipient":"unisex_adults","occasion":"wedding","style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false}],"params":{"listing_id":"115197655"},"type":"Listing","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:01 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/115197655/images?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:01 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9139'
+      X-Etsy-Request-Uuid:
+      - H2H9wuuZK4lFW5lWkDSFOsI1fQRv
+      Content-Length:
+      - '3146'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":5,"results":[{"listing_image_id":396030771,"hex_code":"000000","red":0,"green":0,"blue":0,"hue":0,"saturation":0,"brightness":0,"is_black_and_white":null,"creation_tsz":1353050834,"listing_id":115197655,"rank":1,"url_75x75":"http:\/\/img3.etsystatic.com\/002\/0\/6815820\/il_75x75.396030771_8hhs.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/002\/0\/6815820\/il_170x135.396030771_8hhs.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/002\/0\/6815820\/il_570xN.396030771_8hhs.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/002\/0\/6815820\/il_fullxfull.396030771_8hhs.jpg","full_height":667,"full_width":1000},{"listing_image_id":397501465,"hex_code":"707B7D","red":112,"green":123,"blue":125,"hue":189,"saturation":10,"brightness":49,"is_black_and_white":false,"creation_tsz":1353380339,"listing_id":115197655,"rank":2,"url_75x75":"http:\/\/img1.etsystatic.com\/001\/0\/6815820\/il_75x75.397501465_rfg0.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/001\/0\/6815820\/il_170x135.397501465_rfg0.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/001\/0\/6815820\/il_570xN.397501465_rfg0.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/001\/0\/6815820\/il_fullxfull.397501465_rfg0.jpg","full_height":712,"full_width":1000},{"listing_image_id":396030801,"hex_code":"000000","red":0,"green":0,"blue":0,"hue":0,"saturation":0,"brightness":0,"is_black_and_white":null,"creation_tsz":1353050834,"listing_id":115197655,"rank":3,"url_75x75":"http:\/\/img1.etsystatic.com\/007\/0\/6815820\/il_75x75.396030801_bws5.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/007\/0\/6815820\/il_170x135.396030801_bws5.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/007\/0\/6815820\/il_570xN.396030801_bws5.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/007\/0\/6815820\/il_fullxfull.396030801_bws5.jpg","full_height":865,"full_width":1000},{"listing_image_id":396037006,"hex_code":"5F7A94","red":95,"green":122,"blue":148,"hue":209,"saturation":35,"brightness":58,"is_black_and_white":false,"creation_tsz":1353050834,"listing_id":115197655,"rank":4,"url_75x75":"http:\/\/img2.etsystatic.com\/008\/0\/6815820\/il_75x75.396037006_bh8l.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/008\/0\/6815820\/il_170x135.396037006_bh8l.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/008\/0\/6815820\/il_570xN.396037006_bh8l.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/008\/0\/6815820\/il_fullxfull.396037006_bh8l.jpg","full_height":736,"full_width":1000},{"listing_image_id":359489262,"hex_code":"F3F3F3","red":243,"green":243,"blue":243,"hue":0,"saturation":0,"brightness":95,"is_black_and_white":true,"creation_tsz":1353050834,"listing_id":115197655,"rank":5,"url_75x75":"http:\/\/img2.etsystatic.com\/002\/0\/6815820\/il_75x75.359489262_dvxf.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/002\/0\/6815820\/il_170x135.359489262_dvxf.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/002\/0\/6815820\/il_570xN.359489262_dvxf.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/002\/0\/6815820\/il_fullxfull.359489262_dvxf.jpg","full_height":1000,"full_width":1000}],"params":{"listing_id":"115197655"},"type":"ListingImage","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:01 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/151665957?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:01 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9138'
+      X-Etsy-Request-Uuid:
+      - P8LZc6HGv3MUJ-syw1V48SDHZzKy
+      Content-Length:
+      - '1569'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"listing_id":151665957,"state":"active","user_id":18860923,"category_id":68891976,"title":"15
+        Wooden Beer mugs 0,8 l (27oz) , natural wood, stainless steel inside,groomsmen
+        gift","description":"it is set of 15 mugs.\r\n\r\nThis handcrafted beer mug
+        is made from real oak wood.\r\nThe inside of mug of stainless steel.\r\nCan
+        be used for hot and cold drinks.\r\n If you need more quantity, please convo
+        me via Etsy conversation.\r\n \r\n\r\nShipping to U.S takes 10-14 days.\r\nI
+        will provide a tracking number for each parcel.","creation_tsz":1369801082,"ending_tsz":1380427200,"original_creation_tsz":1369018690,"last_modified_tsz":1369801083,"price":"240.00","currency_code":"USD","quantity":1,"tags":["mug","beer","wood","handmade","ukraine","souvenirs","gifts","bar","wooden
+        tableware","cooperage","gift groomsman","groomsmen gift","Best Man"],"category_path":["Woodworking","Housewares"],"category_path_ids":[68887388,68891976],"materials":["wood","stainless
+        Steel"],"shop_section_id":12926714,"featured_rank":0,"state_tsz":1369801083,"url":"http:\/\/www.etsy.com\/listing\/151665957\/15-wooden-beer-mugs-08-l-27oz-natural?utm_source=craftable&utm_medium=api&utm_campaign=api","views":27,"num_favorers":2,"processing_min":4,"processing_max":7,"who_made":"collective","is_supply":"false","when_made":"made_to_order","is_private":false,"recipient":"men","occasion":"wedding","style":["Woodland"],"non_taxable":false,"is_digital":false,"file_data":"","has_variations":true}],"params":{"listing_id":"151665957"},"type":"Listing","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:01 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/151665957/images?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:01 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9137'
+      X-Etsy-Request-Uuid:
+      - W6nO9ofPIUB8V_rmflshwP8Hx1Mb
+      Content-Length:
+      - '1928'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":3,"results":[{"listing_image_id":404477127,"hex_code":"000000","red":0,"green":0,"blue":0,"hue":0,"saturation":0,"brightness":0,"is_black_and_white":null,"creation_tsz":1369018691,"listing_id":151665957,"rank":1,"url_75x75":"http:\/\/img3.etsystatic.com\/007\/0\/6710425\/il_75x75.404477127_dayk.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/007\/0\/6710425\/il_170x135.404477127_dayk.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/007\/0\/6710425\/il_570xN.404477127_dayk.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/007\/0\/6710425\/il_fullxfull.404477127_dayk.jpg","full_height":1500,"full_width":1125},{"listing_image_id":389649819,"hex_code":"8A7868","red":138,"green":120,"blue":104,"hue":28,"saturation":24,"brightness":54,"is_black_and_white":false,"creation_tsz":1369018691,"listing_id":151665957,"rank":2,"url_75x75":"http:\/\/img3.etsystatic.com\/004\/0\/6710425\/il_75x75.389649819_rnx3.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/004\/0\/6710425\/il_170x135.389649819_rnx3.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/004\/0\/6710425\/il_570xN.389649819_rnx3.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/004\/0\/6710425\/il_fullxfull.389649819_rnx3.jpg","full_height":613,"full_width":460},{"listing_image_id":389649877,"hex_code":"7C726C","red":124,"green":114,"blue":108,"hue":22,"saturation":12,"brightness":48,"is_black_and_white":false,"creation_tsz":1369018691,"listing_id":151665957,"rank":3,"url_75x75":"http:\/\/img1.etsystatic.com\/001\/0\/6710425\/il_75x75.389649877_k9u7.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/001\/0\/6710425\/il_170x135.389649877_k9u7.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/001\/0\/6710425\/il_570xN.389649877_k9u7.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/001\/0\/6710425\/il_fullxfull.389649877_k9u7.jpg","full_height":345,"full_width":460}],"params":{"listing_id":"151665957"},"type":"ListingImage","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:02 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/127446686?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:02 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9136'
+      X-Etsy-Request-Uuid:
+      - lODH4WGs1YyR1hsChDYBEMy2Vt5A
+      Content-Length:
+      - '1982'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"listing_id":127446686,"state":"active","user_id":28590404,"category_id":68890984,"title":"Set
+        of 5 Personalized 2 Liter Mini-Oak Whiskey Barrel - Groomsmen Gift - Father&#39;s
+        Day Gift - Personalized Gift","description":"Steel-banded Oak 2 liter Barrel\/Cask
+        comes with its own stand, spigot and bung make for convenient serving and
+        filling. \r\n\r\nBarrel measures 7 \u00bd\u201d x 5\u201d x 5\u201d\r\n\r\nPersonalize
+        in the notes to seller with one letter, three initials, 1 line up to 10 characters,
+        or 2 lines up to 10 characters per line.\r\n\r\nThis is for 5 barrels. If
+        you need a different amount, please contact me and I&#39;ll make a listing
+        for exactly what you need at a discounted rate.\r\n\r\nFor other great groomsmen
+        and men gifts click here:\r\n\r\nhttp:\/\/www.etsy.com\/shop\/MyPersonalMemories?section_id=13236312\r\n\r\nThank
+        you for looking,\r\n\r\nKristin C","creation_tsz":1370121564,"ending_tsz":1380600000,"original_creation_tsz":1364178440,"last_modified_tsz":1370121564,"price":"277.50","currency_code":"USD","quantity":3,"tags":["personalized
+        gifts","whiskey barrel","groomsmen gift","groomsmen gifts","fathers day gift","wedding
+        party gifts","best man gifts","best man gift","custom best man gift","wedding
+        gifts","wedding gift","groomsman gift","wedding party"],"category_path":["Weddings","Just
+        Married"],"category_path_ids":[68887494,68890984],"materials":[],"shop_section_id":13236312,"featured_rank":0,"state_tsz":1368671573,"url":"http:\/\/www.etsy.com\/listing\/127446686\/set-of-5-personalized-2-liter-mini-oak?utm_source=craftable&utm_medium=api&utm_campaign=api","views":243,"num_favorers":26,"processing_min":5,"processing_max":10,"who_made":"collective","is_supply":"false","when_made":"made_to_order","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false}],"params":{"listing_id":"127446686"},"type":"Listing","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:02 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/127446686/images?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:02 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9135'
+      X-Etsy-Request-Uuid:
+      - QPkXqjYXSZVh4HhJisauu3IgzE-S
+      Content-Length:
+      - '2545'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":4,"results":[{"listing_image_id":460624787,"hex_code":"92795F","red":146,"green":121,"blue":95,"hue":31,"saturation":34,"brightness":57,"is_black_and_white":false,"creation_tsz":1368973842,"listing_id":127446686,"rank":1,"url_75x75":"http:\/\/img3.etsystatic.com\/010\/0\/7905522\/il_75x75.460624787_pyx1.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/010\/0\/7905522\/il_170x135.460624787_pyx1.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/010\/0\/7905522\/il_570xN.460624787_pyx1.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/010\/0\/7905522\/il_fullxfull.460624787_pyx1.jpg","full_height":826,"full_width":856},{"listing_image_id":460624807,"hex_code":"91785F","red":145,"green":120,"blue":95,"hue":30,"saturation":34,"brightness":56,"is_black_and_white":false,"creation_tsz":1368973842,"listing_id":127446686,"rank":2,"url_75x75":"http:\/\/img3.etsystatic.com\/012\/0\/7905522\/il_75x75.460624807_zmpn.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/012\/0\/7905522\/il_170x135.460624807_zmpn.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/012\/0\/7905522\/il_570xN.460624807_zmpn.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/012\/0\/7905522\/il_fullxfull.460624807_zmpn.jpg","full_height":740,"full_width":867},{"listing_image_id":460618346,"hex_code":"8F7256","red":143,"green":114,"blue":86,"hue":29,"saturation":39,"brightness":56,"is_black_and_white":false,"creation_tsz":1368973842,"listing_id":127446686,"rank":3,"url_75x75":"http:\/\/img2.etsystatic.com\/014\/0\/7905522\/il_75x75.460618346_tpxs.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/014\/0\/7905522\/il_170x135.460618346_tpxs.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/014\/0\/7905522\/il_570xN.460618346_tpxs.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/014\/0\/7905522\/il_fullxfull.460618346_tpxs.jpg","full_height":805,"full_width":815},{"listing_image_id":436943766,"hex_code":"927556","red":146,"green":117,"blue":86,"hue":31,"saturation":41,"brightness":57,"is_black_and_white":false,"creation_tsz":1364178440,"listing_id":127446686,"rank":4,"url_75x75":"http:\/\/img2.etsystatic.com\/012\/0\/7905522\/il_75x75.436943766_m2om.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/012\/0\/7905522\/il_170x135.436943766_m2om.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/012\/0\/7905522\/il_570xN.436943766_m2om.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/012\/0\/7905522\/il_fullxfull.436943766_m2om.jpg","full_height":501,"full_width":490}],"params":{"listing_id":"127446686"},"type":"ListingImage","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:02 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/151794557?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:02 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9134'
+      X-Etsy-Request-Uuid:
+      - KjCY9zoD-fV38_G6yYz3onQqaoe9
+      Content-Length:
+      - '1774'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"listing_id":151794557,"state":"active","user_id":10837644,"category_id":68888924,"title":"Personalized
+        Playing Cards with Monogram- Chevron- Groomsmen Gift","description":"Love
+        to play cards? Now you can personalize your own set or give as a gift. Many
+        colors and patterns to choose from. \r\n\r\nPlease leave in the Notes to Seller
+        box:\r\n\r\n** Pattern Choice\r\n** Frame Choice\r\n** Pattern Color Choice
+        & Frame Color Choice\r\n** Monogram Style\r\n** Monogram, as you want it to
+        appear\r\n\r\nWhile we do attempt to reproduce colors as closely as possible,
+        due to different monitor resolutions and settings we cannot guarantee an exact
+        color match for all colors shown in the above preview.","creation_tsz":1369947796,"ending_tsz":1380513600,"original_creation_tsz":1369143634,"last_modified_tsz":1369947796,"price":"25.00","currency_code":"USD","quantity":9,"tags":["personalized","playing
+        cards","card night","poker night","texas hold em","deck of cards","girls night","cards","custom","groomsmen
+        gift","chevron cards","best man gift","monogrammed"],"category_path":["Everything
+        Else","Personalized"],"category_path_ids":[68887416,68888924],"materials":[],"shop_section_id":10610183,"featured_rank":0,"state_tsz":1369143634,"url":"http:\/\/www.etsy.com\/listing\/151794557\/personalized-playing-cards-with-monogram?utm_source=craftable&utm_medium=api&utm_campaign=api","views":52,"num_favorers":6,"processing_min":5,"processing_max":10,"who_made":"i_did","is_supply":"false","when_made":"made_to_order","is_private":false,"recipient":"unisex_adults","occasion":null,"style":["Preppy","Modern"],"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false}],"params":{"listing_id":"151794557"},"type":"Listing","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:03 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/151794557/images?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:03 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9133'
+      X-Etsy-Request-Uuid:
+      - KKmD56vEhiCuGd6afSBU7Ek0f_qo
+      Content-Length:
+      - '3169'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":5,"results":[{"listing_image_id":461304383,"hex_code":"D8CACD","red":216,"green":202,"blue":205,"hue":347,"saturation":6,"brightness":84,"is_black_and_white":false,"creation_tsz":1369143634,"listing_id":151794557,"rank":1,"url_75x75":"http:\/\/img3.etsystatic.com\/016\/0\/6068159\/il_75x75.461304383_326v.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/016\/0\/6068159\/il_170x135.461304383_326v.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/016\/0\/6068159\/il_570xN.461304383_326v.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/016\/0\/6068159\/il_fullxfull.461304383_326v.jpg","full_height":428,"full_width":634},{"listing_image_id":382455296,"hex_code":"ABAAA8","red":171,"green":170,"blue":168,"hue":40,"saturation":1,"brightness":67,"is_black_and_white":false,"creation_tsz":1369143634,"listing_id":151794557,"rank":2,"url_75x75":"http:\/\/img0.etsystatic.com\/005\/0\/6068159\/il_75x75.382455296_r3no.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/005\/0\/6068159\/il_170x135.382455296_r3no.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/005\/0\/6068159\/il_570xN.382455296_r3no.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/005\/0\/6068159\/il_fullxfull.382455296_r3no.jpg","full_height":1100,"full_width":850},{"listing_image_id":426522059,"hex_code":"928D83","red":146,"green":141,"blue":131,"hue":40,"saturation":10,"brightness":57,"is_black_and_white":false,"creation_tsz":1369143634,"listing_id":151794557,"rank":3,"url_75x75":"http:\/\/img3.etsystatic.com\/014\/0\/6068159\/il_75x75.426522059_n8sf.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/014\/0\/6068159\/il_170x135.426522059_n8sf.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/014\/0\/6068159\/il_570xN.426522059_n8sf.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/014\/0\/6068159\/il_fullxfull.426522059_n8sf.jpg","full_height":1500,"full_width":1159},{"listing_image_id":426520696,"hex_code":"AB9E98","red":171,"green":158,"blue":152,"hue":19,"saturation":11,"brightness":67,"is_black_and_white":false,"creation_tsz":1369143634,"listing_id":151794557,"rank":4,"url_75x75":"http:\/\/img0.etsystatic.com\/013\/0\/6068159\/il_75x75.426520696_7its.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/013\/0\/6068159\/il_170x135.426520696_7its.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/013\/0\/6068159\/il_570xN.426520696_7its.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/013\/0\/6068159\/il_fullxfull.426520696_7its.jpg","full_height":1500,"full_width":1159},{"listing_image_id":426522137,"hex_code":"A0C1C2","red":160,"green":193,"blue":194,"hue":182,"saturation":17,"brightness":76,"is_black_and_white":false,"creation_tsz":1369143634,"listing_id":151794557,"rank":5,"url_75x75":"http:\/\/img1.etsystatic.com\/013\/0\/6068159\/il_75x75.426522137_plqj.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/013\/0\/6068159\/il_170x135.426522137_plqj.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/013\/0\/6068159\/il_570xN.426522137_plqj.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/013\/0\/6068159\/il_fullxfull.426522137_plqj.jpg","full_height":1500,"full_width":1159}],"params":{"listing_id":"151794557"},"type":"ListingImage","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:03 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/54915863?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:03 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9132'
+      X-Etsy-Request-Uuid:
+      - WMru0gt2zYHSNlW52f0rAMDDiGlO
+      Content-Length:
+      - '2968'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"listing_id":54915863,"state":"active","user_id":5053531,"category_id":69187763,"title":"Custom
+        Map Cuff Links Cufflink set - You pick the city Great Groomsmen Gift","description":"\u2665Please
+        be sure to indicate which color finish you would like your cuff links to be
+        made in! Shiny silver is no longer available due to quality issues. Sorry
+        about that!\r\n\r\n\u2665Just an FYI. All of my listed items have been made
+        and photographed by me. They are not &quot;stock photos&quot; of a blank necklace\/cuff
+        link setting and photoshopped with an added map design. What you see in the
+        photo is the actual item (I can make multiples!), not a computer generated
+        design.\r\n\r\nEach cuff link measures 15mm around (gunmetal and copper are
+        16mm around) and are made with high quality glass, NOT resin. They are set
+        in a lightweight, brush silver base. They are perfect since they are lightweight,
+        but are still very classy and elegant and are of great quality. These cuff
+        links are heavy duty, but not water proof. Please do not get them wet. I refuse
+        to use toxic resins so I use glass and non toxic glaze which are unfortunately
+        not waterproof.\r\n\r\nSee a sold pendant that you like? Feel free to convo
+        me and I can see if I can make another one for you! Design may vary slightly,
+        but the same style of paper will be used.\r\n\r\nOrder turnaround time is
+        currently 7 days, but may be sooner. At this time rush orders (please see
+        table below) are available with a rush fee. If you need your order received
+        within 7 days, please convo me first so I can set up a listing for you. I&#39;m
+        sorry for the inconvenience! \r\n\r\nFees for rush orders (orders that need
+        to be received within 7 days of request date):\r\n\r\nOrders pre-shipping
+        totaling $50 or less: 20%\r\nOrders totaling $51 to $100: 15%\r\nOrders totaling
+        $100+: $10%","creation_tsz":1369501120,"ending_tsz":1380081600,"original_creation_tsz":1282983977,"last_modified_tsz":1370239220,"price":"30.00","currency_code":"USD","quantity":7,"tags":["map","personalized","personalization","cufflink","wedding","groomsmen
+        gift","map cuff links","custom map cufflinks","customized map","gift for men","gift
+        for traveler","custom map","fathers day"],"category_path":["Accessories","Cuff
+        Links","Men"],"category_path_ids":[69150467,69153851,69187763],"materials":["paper","glass
+        tile","cuff link","silver","glaze"],"shop_section_id":6547506,"featured_rank":0,"state_tsz":1370239220,"url":"http:\/\/www.etsy.com\/listing\/54915863\/custom-map-cuff-links-cufflink-set-you?utm_source=craftable&utm_medium=api&utm_campaign=api","views":3078,"num_favorers":98,"processing_min":5,"processing_max":7,"who_made":"i_did","is_supply":"false","when_made":"2010_2013","is_private":false,"recipient":"men","occasion":"wedding","style":["Historical","Traditional"],"non_taxable":true,"is_digital":false,"file_data":"","has_variations":true}],"params":{"listing_id":"54915863"},"type":"Listing","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:03 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/54915863/images?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:03 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9131'
+      X-Etsy-Request-Uuid:
+      - QyV8vcDvQ3c1gwwaxW9jdXuRb4WZ
+      Content-Length:
+      - '3091'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":5,"results":[{"listing_image_id":418443428,"hex_code":"C6C5BE","red":198,"green":197,"blue":190,"hue":52,"saturation":4,"brightness":77,"is_black_and_white":false,"creation_tsz":1358748380,"listing_id":54915863,"rank":1,"url_75x75":"http:\/\/img0.etsystatic.com\/011\/0\/5168535\/il_75x75.418443428_fvsa.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/011\/0\/5168535\/il_170x135.418443428_fvsa.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/011\/0\/5168535\/il_570xN.418443428_fvsa.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/011\/0\/5168535\/il_fullxfull.418443428_fvsa.jpg","full_height":1024,"full_width":1024},{"listing_image_id":169759873,"hex_code":"B7A998","red":183,"green":169,"blue":152,"hue":32,"saturation":16,"brightness":71,"is_black_and_white":false,"creation_tsz":1299877281,"listing_id":54915863,"rank":2,"url_75x75":"http:\/\/img1.etsystatic.com\/000\/0\/5168535\/il_75x75.169759873.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/000\/0\/5168535\/il_170x135.169759873.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/000\/0\/5168535\/il_570xN.169759873.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/000\/0\/5168535\/il_fullxfull.169759873.jpg","full_height":0,"full_width":0},{"listing_image_id":169759874,"hex_code":"C1A093","red":193,"green":160,"blue":147,"hue":16,"saturation":23,"brightness":75,"is_black_and_white":false,"creation_tsz":1299877281,"listing_id":54915863,"rank":3,"url_75x75":"http:\/\/img2.etsystatic.com\/000\/0\/5168535\/il_75x75.169759874.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/000\/0\/5168535\/il_170x135.169759874.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/000\/0\/5168535\/il_570xN.169759874.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/000\/0\/5168535\/il_fullxfull.169759874.jpg","full_height":0,"full_width":0},{"listing_image_id":277256228,"hex_code":"79847B","red":121,"green":132,"blue":123,"hue":136,"saturation":8,"brightness":51,"is_black_and_white":false,"creation_tsz":1318268837,"listing_id":54915863,"rank":4,"url_75x75":"http:\/\/img0.etsystatic.com\/000\/0\/5168535\/il_75x75.277256228.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/000\/0\/5168535\/il_170x135.277256228.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/000\/0\/5168535\/il_570xN.277256228.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/000\/0\/5168535\/il_fullxfull.277256228.jpg","full_height":478,"full_width":640},{"listing_image_id":461572660,"hex_code":"BCA494","red":188,"green":164,"blue":148,"hue":24,"saturation":21,"brightness":73,"is_black_and_white":false,"creation_tsz":1369193194,"listing_id":54915863,"rank":5,"url_75x75":"http:\/\/img0.etsystatic.com\/011\/0\/5168535\/il_75x75.461572660_nic6.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/011\/0\/5168535\/il_170x135.461572660_nic6.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/011\/0\/5168535\/il_570xN.461572660_nic6.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/011\/0\/5168535\/il_fullxfull.461572660_nic6.jpg","full_height":1125,"full_width":1500}],"params":{"listing_id":"54915863"},"type":"ListingImage","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:04 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/151668265?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:04 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9130'
+      X-Etsy-Request-Uuid:
+      - XcG_14LR7frSOgSuWi1lpCnBruCT
+      Content-Length:
+      - '5012'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"listing_id":151668265,"state":"active","user_id":28672032,"category_id":68891054,"title":"PACK
+        of 9 - BRASS 50 Caliber Bottle Openers - Groomsmen Gift or Bachelor Party
+        Pack","description":"\u2588 9 Pack of BRASS 50 Caliber Bottle Openers \u2588\r\n\r\nPerfect
+        Groomsmen gift or Party Pack.\r\n\r\nDescription.\r\nWe take the extra time
+        to polish the outside as well as the inside of each bottle opener. By using
+        an industrial strength polishing wheel for the outside and a dremel tool for
+        the inside, it gives it the extra shine that distinguishes it from all others.
+        They are hand-made from an active duty service member and are made from dummy
+        ammunition, making them completely safe.\r\n\r\nShipping.\r\nPlease allow
+        5-7 business days to ship once payment is processed. Will ship USPS Priority
+        Mail and will include a delivery confirmation tracking number. If you are
+        shipping a gift please let me know beforehand so that we can get it to the
+        right place. Need a gift note? Please let me know at time of purchase.\r\n\r\nMore
+        Information.\r\nThere are similar products in the market, but noting as good
+        as the Bottle Breacher. From functionality to design, the cut is a new and
+        innovative allowing quicker breach of your bottle. The Bottle Breacher tops
+        them all. Open your next beer in style.\r\n\r\n____________________________________________________________________\r\n\r\nNeed
+        a certain amount ? Bottle Breacher has you covered. Discounts on Packs! \r\n\r\nBrass
+        50 Caliber Bottle Opener Packs\r\nPACK of 3 - https:\/\/www.etsy.com\/listing\/125773669\/pack-of-3-brass-50-caliber-bullet-bottle\r\nPACK
+        of 4 - https:\/\/www.etsy.com\/listing\/125684583\/pack-of-4-brass-50-caliber-bullet-bottle\r\nPACK
+        of 5 -  https:\/\/www.etsy.com\/listing\/151667887\/pack-of-5-brass-50-caliber-bullet-bottle\r\nPACK
+        of 6 - https:\/\/www.etsy.com\/listing\/125688069\/pack-of-6-brass-50-caliber-bottle\r\nPACK
+        of 7 - https:\/\/www.etsy.com\/listing\/151665114\/pack-of-7-brass-50-caliber-bottle\r\nPACK
+        of 8 - https:\/\/www.etsy.com\/listing\/125788775\/pack-of-8-brass-50-caliber-bullet-bottle\r\nPACK
+        of 9 - https:\/\/www.etsy.com\/listing\/151668265\/pack-of-9-brass-50-caliber-bottle\r\nPACK
+        of 10 - https:\/\/www.etsy.com\/listing\/126536371\/pack-of-10-brass-50-caliber-bottle\r\n\r\nBlack
+        50 Caliber Bottle Opener Packs\r\nPACK of 3 - https:\/\/www.etsy.com\/listing\/151673255\/pack-of-3-black-50-caliber-bottle\r\nPACK
+        of 4 - https:\/\/www.etsy.com\/listing\/151670522\/pack-of-4-black-50-caliber-bottle\r\nPACK
+        of 5 - https:\/\/www.etsy.com\/listing\/151672893\/pack-of-5-black-50-caliber-bottle\r\nPACK
+        of 6 - https:\/\/www.etsy.com\/listing\/151672721\/pack-of-6-black-50-caliber-bottle\r\nPACK
+        of 7 - https:\/\/www.etsy.com\/listing\/151669962\/pack-of-7-black-50-caliber-bottle\r\nPACK
+        of 8 - https:\/\/www.etsy.com\/listing\/151672331\/pack-of-8-black-50-caliber-bottle\r\nPACK
+        of 9 - https:\/\/www.etsy.com\/listing\/151669338\/pack-of-9-black-50-caliber-bottle\r\nPACK
+        of 10 - https:\/\/www.etsy.com\/listing\/151669546\/pack-of-10-black-50-caliber-bottle\r\n\r\nYou
+        choose design 50 Caliber Bottle Opener Packs (American Flag\/Marine\/Punisher
+        etc)\r\nPACK of 3 - https:\/\/www.etsy.com\/listing\/122816749\/pack-of-3-50-caliber-bullet-bottle\r\nPACK
+        of 4 - https:\/\/www.etsy.com\/listing\/122817233\/pack-of-4-50-caliber-bottle-openers\r\nPACK
+        of 5 -  https:\/\/www.etsy.com\/listing\/151640610\/pack-of-5-50-caliber-bottle-openers-you\r\nPACK
+        of 6 - https:\/\/www.etsy.com\/listing\/127629614\/pack-of-6-50-caliber-bottle-opener-you\r\nPACK
+        of 7 - https:\/\/www.etsy.com\/listing\/151073508\/pack-of-7-50-caliber-bottle-openers-you\r\nPACK
+        of 8 - https:\/\/www.etsy.com\/listing\/150149898\/pack-of-8-50-caliber-bottle-openers-you\r\nPACK
+        of 9 - https:\/\/www.etsy.com\/listing\/151643625\/pack-of-9-50-caliber-bottle-openers-you\r\nPACK
+        of 10 - https:\/\/www.etsy.com\/listing\/126428716\/pack-of-10-50-caliber-bottle-openers-you","creation_tsz":1369413704,"ending_tsz":1379995200,"original_creation_tsz":1369020574,"last_modified_tsz":1369444991,"price":"144.00","currency_code":"USD","quantity":8,"tags":["50
+        caliber","groomsmen gift","dad husband gift","graduation gift","birthday gift","wedding
+        groom gift","brass","bottle opener","gift for him","gift","fathers day","groom","bachelor
+        party"],"category_path":["Weddings","Men"],"category_path_ids":[68887494,68891054],"materials":["paint","50
+        caliber","decal"],"shop_section_id":13234450,"featured_rank":0,"state_tsz":1369020574,"url":"http:\/\/www.etsy.com\/listing\/151668265\/pack-of-9-brass-50-caliber-bottle?utm_source=craftable&utm_medium=api&utm_campaign=api","views":140,"num_favorers":9,"processing_min":5,"processing_max":10,"who_made":"i_did","is_supply":"false","when_made":"2010_2013","is_private":false,"recipient":"men","occasion":"wedding","style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false}],"params":{"listing_id":"151668265"},"type":"Listing","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:04 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/151668265/images?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:04 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9129'
+      X-Etsy-Request-Uuid:
+      - AMwtwh2xlMS5MYIw1PdNhfvwrYc2
+      Content-Length:
+      - '3168'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":5,"results":[{"listing_image_id":460859820,"hex_code":"968771","red":150,"green":135,"blue":113,"hue":36,"saturation":24,"brightness":58,"is_black_and_white":false,"creation_tsz":1369020574,"listing_id":151668265,"rank":1,"url_75x75":"http:\/\/img0.etsystatic.com\/015\/1\/7635746\/il_75x75.460859820_n5n2.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/015\/1\/7635746\/il_170x135.460859820_n5n2.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/015\/1\/7635746\/il_570xN.460859820_n5n2.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/015\/1\/7635746\/il_fullxfull.460859820_n5n2.jpg","full_height":1125,"full_width":1500},{"listing_image_id":460863135,"hex_code":"91836D","red":145,"green":131,"blue":109,"hue":37,"saturation":24,"brightness":56,"is_black_and_white":false,"creation_tsz":1369020574,"listing_id":151668265,"rank":2,"url_75x75":"http:\/\/img3.etsystatic.com\/016\/0\/7635746\/il_75x75.460863135_7qt7.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/016\/0\/7635746\/il_170x135.460863135_7qt7.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/016\/0\/7635746\/il_570xN.460863135_7qt7.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/016\/0\/7635746\/il_fullxfull.460863135_7qt7.jpg","full_height":1500,"full_width":1125},{"listing_image_id":460865959,"hex_code":"6E6353","red":110,"green":99,"blue":83,"hue":36,"saturation":24,"brightness":43,"is_black_and_white":false,"creation_tsz":1369020574,"listing_id":151668265,"rank":3,"url_75x75":"http:\/\/img3.etsystatic.com\/012\/0\/7635746\/il_75x75.460865959_g80h.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/012\/0\/7635746\/il_170x135.460865959_g80h.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/012\/0\/7635746\/il_570xN.460865959_g80h.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/012\/0\/7635746\/il_fullxfull.460865959_g80h.jpg","full_height":1125,"full_width":1500},{"listing_image_id":460863227,"hex_code":"9C825D","red":156,"green":130,"blue":93,"hue":35,"saturation":40,"brightness":61,"is_black_and_white":false,"creation_tsz":1369020574,"listing_id":151668265,"rank":4,"url_75x75":"http:\/\/img3.etsystatic.com\/014\/0\/7635746\/il_75x75.460863227_ofs0.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/014\/0\/7635746\/il_170x135.460863227_ofs0.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/014\/0\/7635746\/il_570xN.460863227_ofs0.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/014\/0\/7635746\/il_fullxfull.460863227_ofs0.jpg","full_height":1500,"full_width":1125},{"listing_image_id":460863141,"hex_code":"846A52","red":132,"green":106,"blue":82,"hue":29,"saturation":37,"brightness":51,"is_black_and_white":false,"creation_tsz":1369020574,"listing_id":151668265,"rank":5,"url_75x75":"http:\/\/img1.etsystatic.com\/011\/0\/7635746\/il_75x75.460863141_mi37.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/011\/0\/7635746\/il_170x135.460863141_mi37.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/011\/0\/7635746\/il_570xN.460863141_mi37.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/011\/0\/7635746\/il_fullxfull.460863141_mi37.jpg","full_height":1500,"full_width":1125}],"params":{"listing_id":"151668265"},"type":"ListingImage","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:04 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/128652051?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:04 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9128'
+      X-Etsy-Request-Uuid:
+      - GKqi6vyJKw7TQYEREvvzu31MINuW
+      Content-Length:
+      - '4907'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"listing_id":128652051,"state":"active","user_id":10255850,"category_id":68892294,"title":"13
+        Personalized Groomsmen Gifts - Custom Engraved Wood Handle Pocket Knife Hunting
+        Knives - Groomsman Best Man Ring Bearer Gift","description":"Your Ushers,
+        Ring Bearers, and Groomsmen will Love Our Personalized Gifts. Our Engraved
+        Rosewood Hunting Knives Make an Excellent Wedding Favor Keepsake! Laser Engraved
+        with the Name, Date & Text Provided to Us, For a Keepsake They Will Always
+        Remember. We Can Engrave Any Message or Name You Would Like, With Up To 3
+        Lines of Text. Engraving Available on Both Sides or Just One. Made of Solid
+        Rosewood and Laser Engraved with Precision to Have Text with Deep, Clean Lines.
+        The Perfect Favor for Groomsman Gifts, Ring Bearer Gifts, Ushers Gifts, Groom
+        Gifts and Much More! \r\n\r\nThis Listing Includes 13 Personalized Rosewood
+        Knives!\r\n\r\nNeed a Different Quantity? No Problem, We Have It, Just Click
+        The Link Below:\r\n\r\n1 Knife - https:\/\/www.etsy.com\/listing\/123813110\/personalized-pocket-hunting-knife\r\n2
+        Knives - https:\/\/www.etsy.com\/listing\/124228803\/personalized-groomsmen-gift-engraved\r\n3
+        Knives - https:\/\/www.etsy.com\/listing\/124228706\/personalized-groomsmen-gift-engraved\r\n4
+        Knives - https:\/\/www.etsy.com\/listing\/124228569\/personalized-groomsmen-gift-hunting-and\r\n5
+        Knives - https:\/\/www.etsy.com\/listing\/124227560\/personalized-groomsmen-gift-engraved\r\n6
+        Knives - https:\/\/www.etsy.com\/listing\/124226661\/personalized-groomsmen-gift-hunting-and\r\n7
+        Knives - https:\/\/www.etsy.com\/listing\/128582705\/7-personalized-groomsmen-gifts-custom?ref=shop_home_active\r\n8
+        Knives - https:\/\/www.etsy.com\/listing\/124960104\/set-of-8-personalized-engraved-rosewood\r\n9
+        Knives - https:\/\/www.etsy.com\/listing\/128651564\/9-personalized-groomsmen-gifts-custom?ref=shop_home_active\r\n10
+        Knives - https:\/\/www.etsy.com\/listing\/124959474\/set-of-10-personalized-engraved-rosewood\r\n11
+        Knives - https:\/\/www.etsy.com\/listing\/128651220\/11-personalized-groomsmen-gifts-custom?ref=shop_home_active\r\n12
+        Knives - https:\/\/www.etsy.com\/listing\/124958405\/groomsmen-gift-set-of-12-laser-engraved\r\n13
+        Knives - https:\/\/www.etsy.com\/listing\/128652051\/13-personalized-groomsmen-gifts-custom?ref=shop_home_active\r\n14
+        Knives - https:\/\/www.etsy.com\/listing\/128674324\/14-personalized-groomsmen-gifts-custom?ref=shop_home_active\r\n15
+        Knives - https:\/\/www.etsy.com\/listing\/128674506\/15-personalized-groomsmen-gifts-custom?ref=shop_home_active\r\n16
+        Knives - https:\/\/www.etsy.com\/listing\/128674849\/16-personalized-groomsmen-gifts-custom?ref=shop_home_active\r\n17
+        Knives - https:\/\/www.etsy.com\/listing\/128675325\/17-personalized-groomsmen-gifts-custom?ref=shop_home_active\r\n18
+        Knives - https:\/\/www.etsy.com\/listing\/128676262\/18-personalized-groomsmen-gifts-custom?ref=shop_home_active\r\n\r\nItem
+        Details:\r\n\r\nBlade Size is: 3&quot;\r\nDimensions (When Closed): 4-1\/2&quot;
+        x 1-1\/2&quot; x 1\/2&quot;\r\nMade of Solid Rosewood & Stainless Steel\r\nEach
+        Knife is Packaged in a Sturdy Black Carrying Case, Ready for Gift Giving.
+        \r\n\r\n\r\nHow To Order:\r\n\r\nTo Order, Please Just Click The Purchase
+        Button at the Top of the Page and Proceed to Checkout. Simply Enter the Item
+        Information In the Notes Section During Checkout. \r\n\r\nPlease Include:\r\n1.
+        Name\r\n2. Font Choice for Text (Shown In Script Font)\r\n3. Special Date
+        or Message (If applicable)\r\n\r\nWe Now Ship To The UK & Canada! Please Contact
+        Me For a Rate Quote.\r\n\r\nOur Production Time for Custom Knives is Currently
+        2-3 Weeks (Back Ordered Due To Popular Demand)! Please allow an additional
+        3-4 Days For Delivery By Priority Mail. If You Need Something Sooner, Check
+        Out Our Other Listings Which Have 3-5 Day Processing Times.","creation_tsz":1369841808,"ending_tsz":1380427200,"original_creation_tsz":1365303915,"last_modified_tsz":1369841808,"price":"243.00","currency_code":"USD","quantity":1,"tags":["best
+        man gift","hunting knife","pocket knife","monogrammed knife","engraved knife","groomsmen
+        gift","groomsmen knife","best man knife","personalized knife","personalized","wood
+        knife","knife","etched knife"],"category_path":["Weddings","Favor"],"category_path_ids":[68887494,68892294],"materials":[],"shop_section_id":13192132,"featured_rank":0,"state_tsz":1369841808,"url":"http:\/\/www.etsy.com\/listing\/128652051\/13-personalized-groomsmen-gifts-custom?utm_source=craftable&utm_medium=api&utm_campaign=api","views":145,"num_favorers":11,"processing_min":10,"processing_max":15,"who_made":"i_did","is_supply":"false","when_made":"made_to_order","is_private":false,"recipient":"men","occasion":"wedding","style":["Traditional","Modern"],"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false}],"params":{"listing_id":"128652051"},"type":"Listing","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:04 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/128652051/images?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:04 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9127'
+      X-Etsy-Request-Uuid:
+      - hWDXbzEKS9d88Jiwvpoi6J-8qL6D
+      Content-Length:
+      - '1323'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":2,"results":[{"listing_image_id":446207976,"hex_code":"81645A","red":129,"green":100,"blue":90,"hue":15,"saturation":30,"brightness":50,"is_black_and_white":false,"creation_tsz":1365303915,"listing_id":128652051,"rank":1,"url_75x75":"http:\/\/img0.etsystatic.com\/013\/0\/7101908\/il_75x75.446207976_nhk1.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/013\/0\/7101908\/il_170x135.446207976_nhk1.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/013\/0\/7101908\/il_570xN.446207976_nhk1.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/013\/0\/7101908\/il_fullxfull.446207976_nhk1.jpg","full_height":1500,"full_width":1291},{"listing_image_id":428236268,"hex_code":"AEACAC","red":174,"green":172,"blue":172,"hue":0,"saturation":1,"brightness":68,"is_black_and_white":false,"creation_tsz":1365303915,"listing_id":128652051,"rank":2,"url_75x75":"http:\/\/img0.etsystatic.com\/015\/0\/7101908\/il_75x75.428236268_2e3t.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/015\/0\/7101908\/il_170x135.428236268_2e3t.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/015\/0\/7101908\/il_570xN.428236268_2e3t.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/015\/0\/7101908\/il_fullxfull.428236268_2e3t.jpg","full_height":1500,"full_width":982}],"params":{"listing_id":"128652051"},"type":"ListingImage","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:05 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/61856826?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:05 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9126'
+      X-Etsy-Request-Uuid:
+      - H6Rk9jNGcGTfnZ9vQI5-dY8GRx2u
+      Content-Length:
+      - '3069'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"listing_id":61856826,"state":"active","user_id":5449044,"category_id":68887494,"title":"Custom
+        Bar Sign, Wood Sign, Groomsmen gift, Fathers Day Gift, Game room, Family Name
+        Sign, Personalized  groomsmen gift Wedding Sign","description":"Customized
+        or Personalized for whatever Occasion. Family Name Last Name Bar or Grill,
+        Game Room, Poker Room, Man Cave. Great Groomsmen Gifts! I can fit up to 6
+        signs in one flat rate box. Please message me and I would be happy to set
+        up a custom listing for you!\r\n\r\nI can do any of my signs in my shop for
+        your groomsmen, just take a look at my other listings\r\nhere  https:\/\/www.etsy.com\/shop\/KendrasKreations  If
+        you have any other ideas, just message me, Please allow 2-3 weeks for creation
+        of multiple signs for your groomsmen. \r\n\r\nYOUR SIGN WILL:\r\n\u2665 Painted
+        Black with Silver PAINTED lettering\r\n\u2665 Be made out of MDF Wood (Which
+        is made from completely recycled wood) \r\n\u2665 Be suitable for indoor use\r\n\u2665
+        Measure 8&quot; x  22&quot;\r\n\u2665 Have a slightly beveled routed edge
+        - no additional charge\r\n\u2665 Be Hand Painted, the base coat is painted
+        on the front and sides, I leave the back unpainted\r\n\u2665 NOT have vinyl
+        lettering, the lettering is painted on\r\n\u2665 Be Sealed with a polyurethane
+        sealer to protect it for years to come.\r\n\u2665 Be ready to hang with a
+        built in hanger, called a keyhole on the back, no metal hardware.\r\n\u2665
+        Please allow 2-3 weeks for creation of the signs if ordering several at a
+        time. Priority mail takes     2-3 days on top of that.  \r\n\r\n\r\nSHIPPING
+        - Your Sign will:\r\n\u2022 Be shipped via USPS Priority Mail Flat Rate Box  to
+        the address you put on the paypal website.\r\n\u2022 I can ship up to 6 signs
+        in one flat rate box!\r\n\r\nWhen finished checking out, please continue to
+        the Paypal website where you can pay with a credit card.\r\n\r\nThank you
+        so much for helping me be a stay at home mom to my kids. I so enjoy both jobs,
+        and love that I can do both from home. Thanks for looking, and have a great
+        day!","creation_tsz":1370138001,"ending_tsz":1380600000,"original_creation_tsz":1289790879,"last_modified_tsz":1370138001,"price":"34.95","currency_code":"USD","quantity":2,"tags":["bridal
+        party","game room","man cave","black","unique","customized","personalized","dad","brother","recycled","Bar
+        Sign","groomsmen gift","thank you gift"],"category_path":["Weddings"],"category_path_ids":[68887494],"materials":["mdf","paint","sealer"],"shop_section_id":11702605,"featured_rank":0,"state_tsz":1369507990,"url":"http:\/\/www.etsy.com\/listing\/61856826\/custom-bar-sign-wood-sign-groomsmen-gift?utm_source=craftable&utm_medium=api&utm_campaign=api","views":8923,"num_favorers":412,"processing_min":10,"processing_max":15,"who_made":"i_did","is_supply":"false","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false}],"params":{"listing_id":"61856826"},"type":"Listing","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:06 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/61856826/images?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:06 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9125'
+      X-Etsy-Request-Uuid:
+      - nJbJXFyDr9Cl6BWmzXP_upN87sj9
+      Content-Length:
+      - '1909'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":3,"results":[{"listing_image_id":454418408,"hex_code":"707071","red":112,"green":112,"blue":113,"hue":240,"saturation":0,"brightness":44,"is_black_and_white":false,"creation_tsz":1367344554,"listing_id":61856826,"rank":1,"url_75x75":"http:\/\/img0.etsystatic.com\/013\/0\/5223654\/il_75x75.454418408_fzy0.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/013\/0\/5223654\/il_170x135.454418408_fzy0.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/013\/0\/5223654\/il_570xN.454418408_fzy0.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/013\/0\/5223654\/il_fullxfull.454418408_fzy0.jpg","full_height":824,"full_width":960},{"listing_image_id":438334780,"hex_code":"645859","red":100,"green":88,"blue":89,"hue":355,"saturation":12,"brightness":39,"is_black_and_white":false,"creation_tsz":1363377488,"listing_id":61856826,"rank":2,"url_75x75":"http:\/\/img0.etsystatic.com\/015\/0\/5223654\/il_75x75.438334780_1xzz.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/015\/0\/5223654\/il_170x135.438334780_1xzz.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/015\/0\/5223654\/il_570xN.438334780_1xzz.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/015\/0\/5223654\/il_fullxfull.438334780_1xzz.jpg","full_height":480,"full_width":720},{"listing_image_id":302730839,"hex_code":"805F49","red":128,"green":95,"blue":73,"hue":24,"saturation":42,"brightness":50,"is_black_and_white":false,"creation_tsz":1326510951,"listing_id":61856826,"rank":3,"url_75x75":"http:\/\/img3.etsystatic.com\/000\/0\/5223654\/il_75x75.302730839.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/000\/0\/5223654\/il_170x135.302730839.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/000\/0\/5223654\/il_570xN.302730839.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/000\/0\/5223654\/il_fullxfull.302730839.jpg","full_height":720,"full_width":960}],"params":{"listing_id":"61856826"},"type":"ListingImage","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:07 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/126162227?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:07 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9124'
+      X-Etsy-Request-Uuid:
+      - kgYCVumswEWvsdqVUUG38EOsZw2p
+      Content-Length:
+      - '1873'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"listing_id":126162227,"state":"active","user_id":28590404,"category_id":68887494,"title":"Personalized
+        2 Liter Mini-Oak Wine Cask- Groomsmen Gift - Father&#39;s Day Gift - Personalized
+        Gift","description":"Steel-banded Oak 2 liter Barrel\/Cask comes with its
+        own stand, spigot and bung make for convenient serving and filling.\r\n\r\nBarrel
+        measures 7 \u00bd\u201d x 5\u201d x 5\u201d\r\n\r\nPersonalize in the notes
+        to seller with one letter, three initials or 1 line up to 15 characters.\r\n\r\nThis
+        is for one barrel. If you need more than one, please contact me and I&#39;ll
+        make a listing for exactly what you need at a discounted rate.\r\n\r\nFor
+        other great groomsmen and men gifts click here:\r\n\r\nhttp:\/\/www.etsy.com\/shop\/MyPersonalMemories?section_id=13236312\r\n\r\nThank
+        you for looking,\r\n\r\nKristin C","creation_tsz":1370143039,"ending_tsz":1380600000,"original_creation_tsz":1363054715,"last_modified_tsz":1370143039,"price":"59.00","currency_code":"USD","quantity":12,"tags":["personalized
+        gifts","groomsmen gift","groomsmen gifts","fathers day gift","wedding party
+        gift","best man gifts","best man gift","wedding gifts","wedding gift","wine
+        barrel","wine gifts","personalized wine"],"category_path":["Weddings"],"category_path_ids":[68887494],"materials":[],"shop_section_id":13236312,"featured_rank":0,"state_tsz":1365522749,"url":"http:\/\/www.etsy.com\/listing\/126162227\/personalized-2-liter-mini-oak-wine-cask?utm_source=craftable&utm_medium=api&utm_campaign=api","views":694,"num_favorers":88,"processing_min":5,"processing_max":10,"who_made":"collective","is_supply":"false","when_made":"made_to_order","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false}],"params":{"listing_id":"126162227"},"type":"Listing","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:07 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/126162227/images?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:07 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9123'
+      X-Etsy-Request-Uuid:
+      - mHY5HBAdaLSDtCiBpCKporWLlE3k
+      Content-Length:
+      - '1932'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":3,"results":[{"listing_image_id":436957925,"hex_code":"806A56","red":128,"green":106,"blue":86,"hue":29,"saturation":32,"brightness":50,"is_black_and_white":false,"creation_tsz":1363054715,"listing_id":126162227,"rank":1,"url_75x75":"http:\/\/img2.etsystatic.com\/011\/0\/7905522\/il_75x75.436957925_cyl6.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/011\/0\/7905522\/il_170x135.436957925_cyl6.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/011\/0\/7905522\/il_570xN.436957925_cyl6.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/011\/0\/7905522\/il_fullxfull.436957925_cyl6.jpg","full_height":609,"full_width":596},{"listing_image_id":451318962,"hex_code":"856D58","red":133,"green":109,"blue":88,"hue":28,"saturation":33,"brightness":52,"is_black_and_white":false,"creation_tsz":1366573075,"listing_id":126162227,"rank":2,"url_75x75":"http:\/\/img0.etsystatic.com\/010\/0\/7905522\/il_75x75.451318962_mg7d.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/010\/0\/7905522\/il_170x135.451318962_mg7d.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/010\/0\/7905522\/il_570xN.451318962_mg7d.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/010\/0\/7905522\/il_fullxfull.451318962_mg7d.jpg","full_height":805,"full_width":815},{"listing_image_id":436957929,"hex_code":"835F40","red":131,"green":95,"blue":64,"hue":28,"saturation":51,"brightness":51,"is_black_and_white":false,"creation_tsz":1363054715,"listing_id":126162227,"rank":3,"url_75x75":"http:\/\/img0.etsystatic.com\/013\/0\/7905522\/il_75x75.436957929_5epv.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/013\/0\/7905522\/il_170x135.436957929_5epv.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/013\/0\/7905522\/il_570xN.436957929_5epv.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/013\/0\/7905522\/il_fullxfull.436957929_5epv.jpg","full_height":338,"full_width":336}],"params":{"listing_id":"126162227"},"type":"ListingImage","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:07 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/118875317?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:07 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9122'
+      X-Etsy-Request-Uuid:
+      - qo-JkCh32FVc_7rFFznbBcWKjnuV
+      Content-Length:
+      - '2952'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"listing_id":118875317,"state":"active","user_id":8335549,"category_id":68891054,"title":"Groomsmen
+        Gifts - 4 Personalized Engraved Pocket Knives. - Best Man - Father of the
+        Bride - Father of the Groom - Ushers","description":"These pocket knives are
+        the perfect Groomsman Gifts! These special gifts are also perfect for the
+        Best man, Father of the Groom, Father of the Bride, or Ushers. You get 4 beautifully
+        crafted Rosewood handle pocket knives engraved on both sides. These knives
+        are very nice quality with a rosewood handle and nice decorative end caps.
+        It features a 3&quot; Stainless Steel locking blade. When folded, the knives
+        measure 4-1\/4&quot; x 1-1\/2&quot; x 3\/4&quot;.\r\n\r\nThe knives will be
+        engraved with anything you want on them. The pictures show a typical set of
+        knives engraved as Groomsman Gifts. You can choose the content, the font,
+        and any information or picture you want on the knives. I will help you every
+        step along the way.\r\n\r\nUse the &quot;Special Notes&quot; to let me know
+        what you want. I will reply with sample artwork and we will continue to work
+        together from there.I will not engrave them until you are happy with the artwork.
+        Then, they will be engraved and shipped within a few days.\r\n\r\nIf you are
+        interested in other quantities,  Please check the other listings in my shop
+        where there are price breaks at every quantity. For quantities not listed,  just
+        email me and I can put up a special listing.\r\n\r\nPlease Note: I am a very
+        trustworthy vendor. View my feedback and don&#39;t take a chance. I will work
+        with you to give you exactly what you want and send artwork for your approval
+        at every step along the way so you will know and see exactly what you will
+        get. When you are fully satisfied with the artwork, orders will ship via Priority
+        Mail within a few days.","creation_tsz":1370366509,"ending_tsz":1380859200,"original_creation_tsz":1356636452,"last_modified_tsz":1370366509,"price":"88.00","currency_code":"USD","quantity":1,"tags":["Groomsman
+        Gifts","Best Man Gift","Wedding Favor","Personalized Gift","Pocket Knife","Personalized
+        Knife","Laser Engraved Knife","Groom Gift","Wedding Party Gift","Groomsmen
+        Gifts","Usher Gifts","Father of the Bride","Father of the Groom"],"category_path":["Weddings","Men"],"category_path_ids":[68887494,68891054],"materials":["wood","Stainless
+        Steel"],"shop_section_id":12822676,"featured_rank":0,"state_tsz":1367791200,"url":"http:\/\/www.etsy.com\/listing\/118875317\/groomsmen-gifts-4-personalized-engraved?utm_source=craftable&utm_medium=api&utm_campaign=api","views":1860,"num_favorers":256,"processing_min":3,"processing_max":5,"who_made":"i_did","is_supply":"false","when_made":"made_to_order","is_private":false,"recipient":"men","occasion":"wedding","style":["Art
+        Deco"],"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false}],"params":{"listing_id":"118875317"},"type":"Listing","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:07 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/118875317/images?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:07 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9121'
+      X-Etsy-Request-Uuid:
+      - ZPIdsj1uW5ReN5jOZWCxOb_hYcVV
+      Content-Length:
+      - '3162'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":5,"results":[{"listing_image_id":444755002,"hex_code":"725046","red":114,"green":80,"blue":70,"hue":14,"saturation":38,"brightness":44,"is_black_and_white":false,"creation_tsz":1364943910,"listing_id":118875317,"rank":1,"url_75x75":"http:\/\/img2.etsystatic.com\/014\/0\/5695757\/il_75x75.444755002_50l5.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/014\/0\/5695757\/il_170x135.444755002_50l5.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/014\/0\/5695757\/il_570xN.444755002_50l5.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/014\/0\/5695757\/il_fullxfull.444755002_50l5.jpg","full_height":1500,"full_width":1125},{"listing_image_id":405674488,"hex_code":"796855","red":121,"green":104,"blue":85,"hue":32,"saturation":29,"brightness":47,"is_black_and_white":false,"creation_tsz":1356636453,"listing_id":118875317,"rank":2,"url_75x75":"http:\/\/img0.etsystatic.com\/008\/0\/5695757\/il_75x75.405674488_lk19.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/008\/0\/5695757\/il_170x135.405674488_lk19.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/008\/0\/5695757\/il_570xN.405674488_lk19.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/008\/0\/5695757\/il_fullxfull.405674488_lk19.jpg","full_height":1125,"full_width":1500},{"listing_image_id":405673582,"hex_code":"635348","red":99,"green":83,"blue":72,"hue":24,"saturation":27,"brightness":38,"is_black_and_white":false,"creation_tsz":1356636453,"listing_id":118875317,"rank":3,"url_75x75":"http:\/\/img2.etsystatic.com\/003\/0\/5695757\/il_75x75.405673582_qc0k.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/003\/0\/5695757\/il_170x135.405673582_qc0k.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/003\/0\/5695757\/il_570xN.405673582_qc0k.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/003\/0\/5695757\/il_fullxfull.405673582_qc0k.jpg","full_height":1125,"full_width":1500},{"listing_image_id":405673440,"hex_code":"64493D","red":100,"green":73,"blue":61,"hue":18,"saturation":39,"brightness":39,"is_black_and_white":false,"creation_tsz":1356636453,"listing_id":118875317,"rank":4,"url_75x75":"http:\/\/img0.etsystatic.com\/002\/0\/5695757\/il_75x75.405673440_8wlv.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/002\/0\/5695757\/il_170x135.405673440_8wlv.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/002\/0\/5695757\/il_570xN.405673440_8wlv.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/002\/0\/5695757\/il_fullxfull.405673440_8wlv.jpg","full_height":1125,"full_width":1500},{"listing_image_id":405673227,"hex_code":"685444","red":104,"green":84,"blue":68,"hue":27,"saturation":34,"brightness":40,"is_black_and_white":false,"creation_tsz":1356636453,"listing_id":118875317,"rank":5,"url_75x75":"http:\/\/img3.etsystatic.com\/007\/0\/5695757\/il_75x75.405673227_haw0.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/007\/0\/5695757\/il_170x135.405673227_haw0.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/007\/0\/5695757\/il_570xN.405673227_haw0.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/007\/0\/5695757\/il_fullxfull.405673227_haw0.jpg","full_height":1125,"full_width":1500}],"params":{"listing_id":"118875317"},"type":"ListingImage","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:08 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/129013763?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:08 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9120'
+      X-Etsy-Request-Uuid:
+      - 7B3RuqGdVKoR4_zkivbWz1J314xp
+      Content-Length:
+      - '2688'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"listing_id":129013763,"state":"active","user_id":10255850,"category_id":68887494,"title":"Groomsmen
+        Gift, 6 Personalized Beer Glasses, Custom Engraved Pilsner Glass, Wedding
+        Party Gifts, Gifts for Groomsmen, 16oz Glasses","description":"Looking For
+        a Custom Gift For the Wedding Party? Our Personalized Beer Glasses Make an
+        Excellent Wedding Favor Keepsake! Each Personalized Pilsner Design Is Carefully
+        Cut with a Laser Beam For a Permanent Etched Finish. Our Glasses are Dishwasher
+        Safe and Hold Over 16oz of Your Favorite Brew. Our Pilsner Glasses Will Arrive
+        Individually Packaged With Bubble Wrap For Secure Transit. The Perfect Gift
+        for The Bride, Groom, Groomsmen, Bridesmaids, Ring Bearers, Flower Girls,
+        Parents of The Bride and Groom, and Much More! \r\n\r\nThis Listing is for
+        6 Glasses!\r\n\r\nNeed a Different Quantity? We Have It! Simply Convo Us for
+        the Quantity You Need and We Will Setup a Custom Listing.\r\n\r\nHow To Order:\r\n\r\nTo
+        Order, Please Just Click The Buy It Now Button at the Top of the Page and
+        Proceed to Checkout. Simply Enter the Item Information In the Notes Section
+        During Checkout.  \r\n\r\nPlease Include:\r\n1. Name\r\n2. Font Choice for
+        Text\r\n3. Special Date or Message (If applicable)\r\n\r\nWe Now Ship To The
+        UK & Canada! Please Contact Me For a Rate Quote.\r\n\r\nOur Production Time
+        for Custom Pilsner Glasses is Currently 3-5 Days. Please allow an additional
+        3-4 For Delivery By Priority Mail. If You Need Something Sooner, Please Let
+        Us and We Will Do Everything We Can To Speed Up the Process.","creation_tsz":1370376416,"ending_tsz":1380859200,"original_creation_tsz":1365626256,"last_modified_tsz":1370376416,"price":"64.00","currency_code":"USD","quantity":1,"tags":["Personalized","groomsmen
+        gift","personalized mug","gift for groomsmen","gifts for groomsmen","groomsmen
+        beer glass","groomsmen beer mug","personalized glasses","custom beer glasses","wedding
+        party favors","engraved beer glass","pilsner glasses","beer"],"category_path":["Weddings"],"category_path_ids":[68887494],"materials":["Glass","Mason
+        Jars"],"shop_section_id":13440122,"featured_rank":0,"state_tsz":1370376416,"url":"http:\/\/www.etsy.com\/listing\/129013763\/groomsmen-gift-6-personalized-beer?utm_source=craftable&utm_medium=api&utm_campaign=api","views":1410,"num_favorers":236,"processing_min":3,"processing_max":5,"who_made":"i_did","is_supply":"false","when_made":"made_to_order","is_private":false,"recipient":"unisex_adults","occasion":"wedding","style":["Modern","Traditional"],"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false}],"params":{"listing_id":"129013763"},"type":"Listing","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:08 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/129013763/images?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:08 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9119'
+      X-Etsy-Request-Uuid:
+      - xyr-5Vm2PhKMIIpsOADSDLd4giY4
+      Content-Length:
+      - '1326'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":2,"results":[{"listing_image_id":447514953,"hex_code":"837774","red":131,"green":119,"blue":116,"hue":12,"saturation":11,"brightness":51,"is_black_and_white":false,"creation_tsz":1365626256,"listing_id":129013763,"rank":1,"url_75x75":"http:\/\/img1.etsystatic.com\/013\/0\/7101908\/il_75x75.447514953_5osu.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/013\/0\/7101908\/il_170x135.447514953_5osu.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/013\/0\/7101908\/il_570xN.447514953_5osu.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/013\/0\/7101908\/il_fullxfull.447514953_5osu.jpg","full_height":1158,"full_width":1500},{"listing_image_id":439178734,"hex_code":"ABA9A8","red":171,"green":169,"blue":168,"hue":20,"saturation":1,"brightness":67,"is_black_and_white":false,"creation_tsz":1365626256,"listing_id":129013763,"rank":2,"url_75x75":"http:\/\/img2.etsystatic.com\/016\/0\/7101908\/il_75x75.439178734_ssor.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/016\/0\/7101908\/il_170x135.439178734_ssor.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/016\/0\/7101908\/il_570xN.439178734_ssor.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/016\/0\/7101908\/il_fullxfull.439178734_ssor.jpg","full_height":1500,"full_width":1142}],"params":{"listing_id":"129013763"},"type":"ListingImage","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:09 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/91427311?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:09 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9118'
+      X-Etsy-Request-Uuid:
+      - bjhMmPFIK3bJPl4maK8_QOqU8V3f
+      Content-Length:
+      - '2782'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"listing_id":91427311,"state":"active","user_id":6129011,"category_id":68891054,"title":"Personalized
+        Bottle Opener - Traditional Wall Mount - Groomsmen Gift","description":"This
+        Custom Traditional Bottle Opener makes a unique gift for any beer lover. Perfect
+        for Groomsmen Gifts, Best Man Gifts, Man Caves, Christmas, Valentine&#39;s
+        Day, Father&#39;s Day, Graduations, Anniversaries, Birthdays, House-warming,
+        or any other special occasion!\r\n\r\n----------- HOW TO PERSONALIZE ----------\r\n\r\nEach
+        bottle Opener can be personalized with up to 3 unique lines of text.\r\nWhen
+        placing your order, copy and paste the following into the Notes-to-Seller
+        section (limit 25 characters\/line):\r\nLine 1:\r\nLine 2:\r\nLine 3:\r\n\r\nRepeat
+        for multiple openers.\r\n\r\nMake your FONT CHOICE using the drop-down options
+        above the Add To Cart button. \r\n(Etsy app users -- Please type in your font
+        choice.)\r\n**See 4th photo above for the 5 fonts we offer.*** Pictured font
+        is DeVinne.\r\n\r\nNote: If only one personalized line is submitted, it will
+        automatically be enlarged and centered. \r\n\r\n\r\n----------- PRODUCT DETAILS
+        -----------\r\n\r\n* Heavily-plated, durable Solid Steel casting in use since
+        1925!\r\n* Mounts to wood (or other drillable surface.)  Two wood screws are
+        included.\r\n* Measures approximately 3&quot; x 3&quot; x 1.5&quot; deep.
+        Weighs 4 oz.\r\n* Great for use in kitchens, bars, decks, garages, man caves,
+        boats, rec rooms, RVs, or wherever  bottled beverages are enjoyed.\r\n* Personalization
+        is done using a high performance Scotchcal thermally impregnated appliqu\u00e9.  Tough
+        and durable.","creation_tsz":1370367607,"ending_tsz":1380859200,"original_creation_tsz":1327519965,"last_modified_tsz":1370367607,"price":"18.90","currency_code":"USD","quantity":18,"tags":["bottle
+        opener","personalized","custom","wall mount","bar ware","wedding favor","menofetsy","man
+        cave","groomsmen gift","best man gift","gift for dad","man gift","beer opener"],"category_path":["Weddings","Men"],"category_path_ids":[68887494,68891054],"materials":["steel","metal","bottle
+        opener","personalized","customized","screw mount","wall mounted","screw mounted","beer
+        bottle opener"],"shop_section_id":13097945,"featured_rank":0,"state_tsz":1366541353,"url":"http:\/\/www.etsy.com\/listing\/91427311\/personalized-bottle-opener-traditional?utm_source=craftable&utm_medium=api&utm_campaign=api","views":10360,"num_favorers":1320,"processing_min":3,"processing_max":5,"who_made":"collective","is_supply":"false","when_made":"made_to_order","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":true}],"params":{"listing_id":"91427311"},"type":"Listing","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:10 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/91427311/images?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:10 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9117'
+      X-Etsy-Request-Uuid:
+      - BIr3PZlgIpvYWoVEThWfvHUdetDK
+      Content-Length:
+      - '2482'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":4,"results":[{"listing_image_id":427576855,"hex_code":"75675D","red":117,"green":103,"blue":93,"hue":25,"saturation":20,"brightness":45,"is_black_and_white":false,"creation_tsz":1360862824,"listing_id":91427311,"rank":1,"url_75x75":"http:\/\/img1.etsystatic.com\/012\/0\/5576738\/il_75x75.427576855_6oox.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/012\/0\/5576738\/il_170x135.427576855_6oox.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/012\/0\/5576738\/il_570xN.427576855_6oox.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/012\/0\/5576738\/il_fullxfull.427576855_6oox.jpg","full_height":450,"full_width":570},{"listing_image_id":306144189,"hex_code":"A68062","red":166,"green":128,"blue":98,"hue":26,"saturation":40,"brightness":65,"is_black_and_white":false,"creation_tsz":1327519965,"listing_id":91427311,"rank":2,"url_75x75":"http:\/\/img1.etsystatic.com\/000\/0\/5576738\/il_75x75.306144189.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/000\/0\/5576738\/il_170x135.306144189.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/000\/0\/5576738\/il_570xN.306144189.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/000\/0\/5576738\/il_fullxfull.306144189.jpg","full_height":450,"full_width":570},{"listing_image_id":306284446,"hex_code":"C8BCB3","red":200,"green":188,"blue":179,"hue":25,"saturation":10,"brightness":78,"is_black_and_white":false,"creation_tsz":1327519965,"listing_id":91427311,"rank":3,"url_75x75":"http:\/\/img0.etsystatic.com\/000\/0\/5576738\/il_75x75.306284446.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/000\/0\/5576738\/il_170x135.306284446.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/000\/0\/5576738\/il_570xN.306284446.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/000\/0\/5576738\/il_fullxfull.306284446.jpg","full_height":450,"full_width":570},{"listing_image_id":308096984,"hex_code":"E2E2E3","red":226,"green":226,"blue":227,"hue":240,"saturation":0,"brightness":89,"is_black_and_white":false,"creation_tsz":1328045053,"listing_id":91427311,"rank":4,"url_75x75":"http:\/\/img0.etsystatic.com\/000\/0\/5576738\/il_75x75.308096984.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/000\/0\/5576738\/il_170x135.308096984.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/000\/0\/5576738\/il_570xN.308096984.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/000\/0\/5576738\/il_fullxfull.308096984.jpg","full_height":450,"full_width":570}],"params":{"listing_id":"91427311"},"type":"ListingImage","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:10 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/80648022?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:10 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9116'
+      X-Etsy-Request-Uuid:
+      - ZzhF9xprbIE9I0RhZMjvHE4vS3sy
+      Content-Length:
+      - '2503'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"listing_id":80648022,"state":"active","user_id":11080068,"category_id":68891054,"title":"Groomsmen
+        Gift Mustache Flasks Liquor Flasks Custom Flask Wedding Party Groomsman Gifts
+        6oz or 8oz Mens Flasks","description":"Your groomsmen and best man will love
+        these flasks!\r\n\r\nYou can personalize our  mustache flasks with names,
+        dates, initials or anything else you can possibly think of.\r\n\r\nPlease
+        provide mustache and font selections in Note to Seller when checking out.\r\n\r\nThis
+        listing is for a set of 6 flasks.\r\nFor different quantities, please use
+        the link below:\r\nhttps:\/\/www.etsy.com\/shop\/thehairofthedog?section_id=13311478\r\n\r\n\r\nAvailable
+        in 6 oz or 8 oz sizes (same cost), our mustache flasks are a great hit for
+        wedding\r\nparties.\r\n\r\nAll flasks are boxed for gifting as seen in the
+        photo. Tote bags and stainless steel funnels are included.\r\n\r\nDigitally
+        fused on synthetic linen. A urethane laminate is applied to waterproof.\r\n\r\n_________________________________________________________________\r\n\r\nBe
+        sure to check out our koozies in this style at Skoodo!\r\nhttp:\/\/www.etsy.com\/listing\/102004096\/groomsmen-gift-wedding-party-mustache\r\n__________________________________________________________________\r\n\r\nCustom
+        orders are welcomed and encouraged!\r\n\r\nWe ship Priority Mail - US and
+        International","creation_tsz":1370310665,"ending_tsz":1380772800,"original_creation_tsz":1314553744,"last_modified_tsz":1370310665,"price":"114.00","currency_code":"USD","quantity":1,"tags":["groomsmen
+        gift","groomsman gift","groomsmen","groomsman","wedding","wedding party","flask","liquor
+        flask","custom flask","mustache flask","moustache flask","6oz","8oz"],"category_path":["Weddings","Men"],"category_path_ids":[68887494,68891054],"materials":["stainless
+        steel flasks","stainless steel funnels","linen","urethane laminate","plastic
+        gift boxes","muslin tote bags"],"shop_section_id":7998420,"featured_rank":0,"state_tsz":1370310665,"url":"http:\/\/www.etsy.com\/listing\/80648022\/groomsmen-gift-mustache-flasks-liquor?utm_source=craftable&utm_medium=api&utm_campaign=api","views":37023,"num_favorers":3410,"processing_min":5,"processing_max":7,"who_made":"i_did","is_supply":"false","when_made":"made_to_order","is_private":false,"recipient":"men","occasion":"wedding","style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":true}],"params":{"listing_id":"80648022"},"type":"Listing","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:10 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/80648022/images?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:10 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9115'
+      X-Etsy-Request-Uuid:
+      - aRSvM3CMtIi8ezcF9Ye8tejYtodD
+      Content-Length:
+      - '3106'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":5,"results":[{"listing_image_id":307717387,"hex_code":"BDBAB8","red":189,"green":186,"blue":184,"hue":24,"saturation":2,"brightness":74,"is_black_and_white":false,"creation_tsz":1327973018,"listing_id":80648022,"rank":1,"url_75x75":"http:\/\/img3.etsystatic.com\/000\/0\/6023572\/il_75x75.307717387.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/000\/0\/6023572\/il_170x135.307717387.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/000\/0\/6023572\/il_570xN.307717387.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/000\/0\/6023572\/il_fullxfull.307717387.jpg","full_height":1400,"full_width":1400},{"listing_image_id":440912642,"hex_code":"8B8A89","red":139,"green":138,"blue":137,"hue":30,"saturation":1,"brightness":54,"is_black_and_white":null,"creation_tsz":1363983204,"listing_id":80648022,"rank":2,"url_75x75":"http:\/\/img2.etsystatic.com\/010\/0\/6023572\/il_75x75.440912642_41ry.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/010\/0\/6023572\/il_170x135.440912642_41ry.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/010\/0\/6023572\/il_570xN.440912642_41ry.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/010\/0\/6023572\/il_fullxfull.440912642_41ry.jpg","full_height":570,"full_width":570},{"listing_image_id":440912692,"hex_code":"000000","red":0,"green":0,"blue":0,"hue":0,"saturation":0,"brightness":0,"is_black_and_white":null,"creation_tsz":1363983204,"listing_id":80648022,"rank":3,"url_75x75":"http:\/\/img0.etsystatic.com\/011\/0\/6023572\/il_75x75.440912692_j7kf.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/011\/0\/6023572\/il_170x135.440912692_j7kf.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/011\/0\/6023572\/il_570xN.440912692_j7kf.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/011\/0\/6023572\/il_fullxfull.440912692_j7kf.jpg","full_height":792,"full_width":612},{"listing_image_id":266957473,"hex_code":"C7C4BF","red":199,"green":196,"blue":191,"hue":37,"saturation":4,"brightness":78,"is_black_and_white":false,"creation_tsz":1314553928,"listing_id":80648022,"rank":4,"url_75x75":"http:\/\/img1.etsystatic.com\/000\/0\/6023572\/il_75x75.266957473.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/000\/0\/6023572\/il_170x135.266957473.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/000\/0\/6023572\/il_570xN.266957473.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/000\/0\/6023572\/il_fullxfull.266957473.jpg","full_height":547,"full_width":1000},{"listing_image_id":419033955,"hex_code":"BAB4B0","red":186,"green":180,"blue":176,"hue":24,"saturation":5,"brightness":72,"is_black_and_white":false,"creation_tsz":1358881553,"listing_id":80648022,"rank":5,"url_75x75":"http:\/\/img3.etsystatic.com\/010\/0\/6023572\/il_75x75.419033955_adhw.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/010\/0\/6023572\/il_170x135.419033955_adhw.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/010\/0\/6023572\/il_570xN.419033955_adhw.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/010\/0\/6023572\/il_fullxfull.419033955_adhw.jpg","full_height":1000,"full_width":1000}],"params":{"listing_id":"80648022"},"type":"ListingImage","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:10 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/112511770?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:10 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9114'
+      X-Etsy-Request-Uuid:
+      - j73FCUX1GqZ76mgwHUsNJO9MjS3c
+      Content-Length:
+      - '3486'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"listing_id":112511770,"state":"active","user_id":6977523,"category_id":69188567,"title":"Personalized
+        Bottle Opener Key Chain - Perfect Groomsmen Gift, Wedding, Beer Lover, Custom
+        Key Chain, Father&#39;s Day, Graduation -TOP SELLER","description":"****THE
+        DEADLINE FOR FATHER&#39;S DAY ORDERS WAS MAY 31ST.   ALL ORDERS PLACED AFTER
+        THIS DATE ARE NOT GUARANTEED FOR FATHER&#39;S DAY DELIVERY***\r\n\r\nMY CURRENT
+        PRODUCTION TIME IS 2 - 3 WEEKS BEFORE SHIPPING.\r\n\r\n************************************************************************************************\r\n\r\n***AS
+        FEATURED ON THE FRONT PAGE OF ETSY AND ON THE BRIDALWAVE (UK) WEBSITE*****\r\n\r\nCreate
+        the perfect gift for the man, woman or beer lover in your life with this fully
+        customizable bottle opener key chain.  This has been a consistent top seller
+        for bridal party favors (it was recently featured as a top groomsmen gift
+        on the bridalwave.tv website), graduation gifts and special Father&#39;s Day
+        gifts!\r\n\r\nThis hearty stainless steel bottle opener measures 2 1\/4&quot;
+        x 1 1\/4&quot; and can be personalized with names, a monogram, wedding\/birth\/anniversary
+        dates, quote, inside joke or anything you&#39;d like to say!\r\n\r\n***This
+        listing is for ONE (1) bottle opener.  Please contact me for quantity discounts
+        for orders of 5 or more - perfect for your wedding party, your fraternity
+        brothers or to remember that infamous guys weekend!***\r\n\r\nSince I individually
+        hand stamp everything, please expect that there will be some variation with
+        each piece. You&#39;ll notice that the lettering isn&#39;t always straight
+        or perfect, but that adds to the unique charm of your key chain. \r\n\r\nPlease
+        leave your inscription *EXACTLY* how you wish to have it hand stamped in the
+        &quot;message to seller box&quot; upon checkout.  For example, if you&#39;d
+        like &quot;#1 DAD&quot; stamped in all uppercase, type it as such or all lowercase
+        &quot;#1 dad&quot; or upper\/lower combined &quot;#1 Dad&quot;.\r\n\r\nFor
+        other unique gifts, I also create customized sterling silver golf ball markers:  https:\/\/www.etsy.com\/listing\/87286740\/golf-ball-marker-keepsake-wleather-key\r\n\r\nand
+        customized nickel silver guitar pick key chains:  https:\/\/www.etsy.com\/listing\/86198035\/personalized-guitar-pick-wleather-key","creation_tsz":1370299815,"ending_tsz":1380772800,"original_creation_tsz":1350736954,"last_modified_tsz":1370300570,"price":"18.95","currency_code":"USD","quantity":25,"tags":["personalized","guy
+        gift","dad gift","Groomsmen gifts","custom bottle opener","fraternity gift","beer
+        lover gift","custom key chain","wedding party","wedding gift","accessories","Fathers
+        day gift","graduation gift"],"category_path":["Accessories","Keychain","Metal"],"category_path_ids":[69150467,69154275,69188567],"materials":["stainless
+        steel","metal","bridal party","groomsmen gift","graduation gift","fathers
+        day"],"shop_section_id":10091647,"featured_rank":1,"state_tsz":1369431438,"url":"http:\/\/www.etsy.com\/listing\/112511770\/personalized-bottle-opener-key-chain?utm_source=craftable&utm_medium=api&utm_campaign=api","views":13434,"num_favorers":2624,"processing_min":5,"processing_max":10,"who_made":"i_did","is_supply":"false","when_made":"made_to_order","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false}],"params":{"listing_id":"112511770"},"type":"Listing","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:11 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/listings/112511770/images?api_key=zq28pq66whj2cp3tfy9lqz6x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 04 Jun 2013 20:58:11 GMT
+      Server:
+      - Apache
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9113'
+      X-Etsy-Request-Uuid:
+      - SGcOXs_qCNXdMo9au881KqBdfJpA
+      Content-Length:
+      - '3141'
+      X-Cnection:
+      - close
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":5,"results":[{"listing_image_id":386200456,"hex_code":"000000","red":0,"green":0,"blue":0,"hue":0,"saturation":0,"brightness":0,"is_black_and_white":null,"creation_tsz":1350582075,"listing_id":112511770,"rank":1,"url_75x75":"http:\/\/img0.etsystatic.com\/005\/0\/5482292\/il_75x75.386200456_medk.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/005\/0\/5482292\/il_170x135.386200456_medk.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/005\/0\/5482292\/il_570xN.386200456_medk.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/005\/0\/5482292\/il_fullxfull.386200456_medk.jpg","full_height":370,"full_width":640},{"listing_image_id":395823723,"hex_code":"000000","red":0,"green":0,"blue":0,"hue":0,"saturation":0,"brightness":0,"is_black_and_white":null,"creation_tsz":1353010360,"listing_id":112511770,"rank":2,"url_75x75":"http:\/\/img3.etsystatic.com\/002\/0\/5482292\/il_75x75.395823723_qrmv.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/002\/0\/5482292\/il_170x135.395823723_qrmv.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/002\/0\/5482292\/il_570xN.395823723_qrmv.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/002\/0\/5482292\/il_fullxfull.395823723_qrmv.jpg","full_height":123,"full_width":123},{"listing_image_id":422148167,"hex_code":"95868A","red":149,"green":134,"blue":138,"hue":344,"saturation":10,"brightness":58,"is_black_and_white":false,"creation_tsz":1359582403,"listing_id":112511770,"rank":3,"url_75x75":"http:\/\/img3.etsystatic.com\/012\/0\/5482292\/il_75x75.422148167_taop.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/012\/0\/5482292\/il_170x135.422148167_taop.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/012\/0\/5482292\/il_570xN.422148167_taop.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/012\/0\/5482292\/il_fullxfull.422148167_taop.jpg","full_height":340,"full_width":640},{"listing_image_id":393750789,"hex_code":"7F8A95","red":127,"green":138,"blue":149,"hue":210,"saturation":14,"brightness":58,"is_black_and_white":false,"creation_tsz":1352550333,"listing_id":112511770,"rank":4,"url_75x75":"http:\/\/img1.etsystatic.com\/007\/0\/5482292\/il_75x75.393750789_ndi8.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/007\/0\/5482292\/il_170x135.393750789_ndi8.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/007\/0\/5482292\/il_570xN.393750789_ndi8.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/007\/0\/5482292\/il_fullxfull.393750789_ndi8.jpg","full_height":404,"full_width":640},{"listing_image_id":414618722,"hex_code":"DFDFDF","red":223,"green":223,"blue":223,"hue":0,"saturation":0,"brightness":87,"is_black_and_white":null,"creation_tsz":1357859723,"listing_id":112511770,"rank":5,"url_75x75":"http:\/\/img2.etsystatic.com\/010\/0\/5482292\/il_75x75.414618722_9cgv.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/010\/0\/5482292\/il_170x135.414618722_9cgv.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/010\/0\/5482292\/il_570xN.414618722_9cgv.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/010\/0\/5482292\/il_fullxfull.414618722_9cgv.jpg","full_height":175,"full_width":180}],"params":{"listing_id":"112511770"},"type":"ListingImage","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 04 Jun 2013 20:58:11 GMT
+recorded_with: VCR 2.5.0
