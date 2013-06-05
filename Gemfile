@@ -18,6 +18,9 @@ end
 group :test, :development do
   gem 'sqlite3'
   gem 'better_errors'
+end
+
+group :test do
   gem 'simplecov'
   gem 'rspec-rails'
   gem 'cane'
