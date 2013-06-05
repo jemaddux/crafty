@@ -63,7 +63,7 @@ img/star-on-big.png: img/star-on-big-2fbd1004c0493a70f8daec31ca3a8309.png
 img/star-on-big/index.png: img/star-on-big-2fbd1004c0493a70f8daec31ca3a8309.png
 img/star-on.png: img/star-on-5f1bbca2093b22e1d0a6f907600c106b.png
 img/star-on/index.png: img/star-on-5f1bbca2093b22e1d0a6f907600c106b.png
-application.css: application-b08b6a3fcca2671d2f484b0f52088fa4.css
-application/index.css: application-b08b6a3fcca2671d2f484b0f52088fa4.css
+application.css: application-c27b278269f4a9908456788d97141f38.css
+application/index.css: application-c27b278269f4a9908456788d97141f38.css
 jquery.min.map: jquery.min-8b58c0fbf303b938d8e749262f7e50dd.map
 jquery/index.min.map: jquery.min-8b58c0fbf303b938d8e749262f7e50dd.map
