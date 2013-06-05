@@ -14,7 +14,8 @@ class PollsController < ApplicationController
     @poll.etsy
 
     if @poll.save
-      redirect_to @poll, notice: 'poll was successfully created.'
+      redirect_to "polls/#{@poll.id}/select"
+      #redirect_to @poll, notice: 'poll was successfully created.'
     else
       render action: "new"
     end
@@ -24,12 +25,12 @@ class PollsController < ApplicationController
     @poll = Poll.find(params[:id])
   end
 
-  def edit
+  def select_items
     @poll = Poll.find(params[:id])
     @poll.name = params[:poll_name]
     item_ids = params.select{|k,v| v == '1' }.map{|i| i[0] }
     @poll.items.each do |item|
-      item.delete if item_ids.include? item.id.to_s
+      item.delete unless item_ids.include? item.id.to_s
     end
 
     if @poll.save

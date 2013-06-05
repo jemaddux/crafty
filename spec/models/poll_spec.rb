@@ -20,7 +20,7 @@ describe Poll do
 
   describe ".etsy" do
     it "finds an etsy user and creates a poll" do
-      VCR.use_cassette("dot_etsy") do
+      VCR.use_cassette("dot_etsy2") do
         poll_count = Poll.count
         poll = Poll.new
         poll.etsy_username = "johnmaddux"
@@ -29,7 +29,7 @@ describe Poll do
         item_count = Item.count
         initialize_etsy
         poll.etsy
-        expect(Item.count).to eq (item_count + 18)
+        expect(Item.count).to eq (item_count + 12)
       end
     end
   end

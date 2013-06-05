@@ -5,7 +5,7 @@
   <br>
   <p>Please select which items you want rated in this poll and give the poll name.</p>
 
-  <%= form_tag("#", method: "post") do %>
+  <%= form_tag("/polls/#{@poll.id}/select_items", method: "post") do %>
     <%= label_tag("Poll Name:") %>
     <%= text_field_tag(:poll_name) %>
     <br>
