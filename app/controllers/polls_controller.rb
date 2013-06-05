@@ -24,6 +24,21 @@ class PollsController < ApplicationController
     @poll = Poll.find(params[:id])
   end
 
+  def edit
+    @poll = Poll.find(params[:id])
+    @poll.name = params[:poll_name]
+    item_ids = params.select{|k,v| v == '1' }.map{|i| i[0] }
+    @poll.items.each do |item|
+      item.delete if item_ids.include? item.id.to_s
+    end
+
+    if @poll.save
+      redirect_to @poll, notice: 'poll was successfully created.'
+    else
+      render action: "new"
+    end
+  end
+
   def show
     @poll = Poll.find(params[:id])
   end
