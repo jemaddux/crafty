@@ -16,8 +16,8 @@
               <%= humanize_number(item.rating) %>
             </span>
             <br>
-            Rate from 1-5:
-            <%= form_tag("/rate_item", method: "post", id: "#{item.id}", class: "form") do %>
+            <span class="form form_<%= item.id %>">Rate from 1-5:</span>
+            <%= form_tag("/rate_item", method: "post", id: "#{item.id}", class: "form form_#{item.id}") do %>
               <%= text_field_tag(:rating) %>
               <%= hidden_field_tag(:item_id, item.id) %>
               <%= submit_tag("Rate") %>
@@ -31,11 +31,17 @@
   <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
 </div>
 
+<%= hidden_field_tag(:items_count, @poll.items.count, id: "items_count") %>
+<div id="success">Success! Thanks for voting. See the results so far.</div>
 
 <script type="text/javascript">
   $(document).ready(function(){
+    var vote_count = 0;
+    var items_count = $("#items_count").val();
+    $("#success").hide();
     $(".form").submit(function(event){
       event.preventDefault();
+      vote_count++;
       var valuesToSubmit = $(this).serialize();
       $.ajax({
         url: $(this).attr('action'),
@@ -51,6 +57,11 @@
       }).success(function(json){
         $("#" + id).text(json);
       });
+      $(".form_" + id).hide();
+      if (vote_count == items_count) {
+        $("#this-carousel-id").hide();
+        $("#success").fadeIn(500);
+      };
     });
   });
 </script>
