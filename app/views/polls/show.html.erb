@@ -35,7 +35,19 @@
 
 <%= hidden_field_tag(:items_count, @poll.items.count, id: "items_count") %>
 <br><br><br><br>
-<div id="success"><p>Success! Thanks for voting. See the results so far. <br><br> <%= link_to("Go", results_path) %></p></div>
+<div id="success">
+  <p>
+    Success! Thanks for voting. See the results so far.
+    <br><br>
+    <%= link_to("Go to results.", results_path) %>
+    <br><br>
+    Or share this poll with your friends:
+    <br><br>
+    <a href="http://twitter.com/share?text=<%= @poll.name.gsub(" ","") %>&url=http://craftable.herokuapp.com/polls/<%= @poll.id %>">Share this poll on Twitter</a>
+    <br><br>
+    <a href="http://www.facebook.com/sharer.php?u=http://craftable.herokuapp.com/polls/<%= @poll.id %>">Share this poll on Facebook</a>
+  </p>
+</div>
 
 <script type="text/javascript">
   $(document).ready(function(){
