@@ -1,18 +1,22 @@
-
-
-<br><br><br>
-
-<table border="2">
-  <tr>
-    <th>Image</th>
-    <th>Rating</th>
-    <th>Times Voted On</th>
-  </tr>
-  <% @results.each do |item| %>
-    <tr>
-      <td><%= image_tag item.item_image_urls.first.medium_url %></td>
-      <td><%= item.rating %></td>
-      <td><%= item.times_rated %></td>
-    </tr>
+<div class="container">
+  <h1>Results</h1>
+  <% @results.each_with_index do |item, index| %>
+    <% if index%3 == 0 %>
+      <div class="row">
+    <% end %>
+    <div class="span4">
+      <h2>Rating: <%= item.rating %></h2>
+      <p>
+        <%= image_tag(item.item_image_urls.first.medium_url, :class => "r_image") %>
+      </p>
+      <p><%= item.name %></p>
+      <p>Times Rated:<%= item.times_rated %></p>
+      <p><%= link_to("Go Buy it on Etsy!", root_path) %></p>
+    </div>
+    <% if index%3 == 2 %>
+      </div>
+    <% end %>
   <% end %>
-</table>
+</div>
+
+
