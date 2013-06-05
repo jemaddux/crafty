@@ -6,6 +6,20 @@
   text-align: center;
   margin: auto;
 }
+#selector_main{
+  background-color: #22dd22;
+  border-radius: 25px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
 .span4{
   background-color: #22dd22;
   border-radius: 5px;

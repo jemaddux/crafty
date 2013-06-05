@@ -1,3 +1,5 @@
+<h2><%= @poll.name if @poll.name != nil %></h2>
+
 <div id="this-carousel-id" class="carousel slide" data-interval="false">
   <div class="carousel-inner">
     <% @poll.items.each_with_index do |item, index| %>
