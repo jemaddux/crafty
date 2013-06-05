@@ -4,7 +4,7 @@ class Poll < ActiveRecord::Base
 
   def etsy
     @user = Etsy::User.find(etsy_username)
-    @faves = Etsy::FavoriteListing.find_all_user_favorite_listings(@user.id, {:limit => 15})
+    @faves = Etsy::FavoriteListing.find_all_user_favorite_listings(@user.id, {:limit => 12})
     @items = []
     @faves.each do |fav|
       item = Etsy::Listing.find(fav.result["listing_id"])
