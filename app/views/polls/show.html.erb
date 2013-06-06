@@ -1,4 +1,4 @@
-<h1 id="poll_title"><%= @poll.name if @poll.name != nil %></h1>
+<h1 id="poll_title"><%= @poll.name if @poll.name %></h1>
 
 <div id="this-carousel-id" class="carousel slide" data-interval="false">
   <div class="carousel-inner">
@@ -22,7 +22,7 @@
             <%= form_tag("/rate_item", method: "post", id: "#{item.id}", class: "form form_#{item.id}") do %>
               <%= text_field_tag(:rating) %>
               <%= hidden_field_tag(:item_id, item.id) %>
-              <%= submit_tag("Rate") %>
+              <%= submit_tag("Rate", class: "btn btn-large btn-success") %>
             <% end %>
           </p>
         </div>
@@ -50,6 +50,7 @@
 </div>
 
 <script type="text/javascript">
+
   $(document).ready(function(){
     var vote_count = 0;
     var items_count = $("#items_count").val();
@@ -81,21 +82,3 @@
   });
 </script>
 
-<script type="text/javascript">
-  $(document).ready(function(){
-    $(function() {
-      $.fn.raty.defaults.path = 'public';
-      $('.star').raty({
-        cancel   : false,
-        cancelOff: 'cancel-off-big.png',
-        cancelOn : 'cancel-on-big.png',
-        half     : true,
-        size     : 24,
-        starHalf : 'star-half-big.png',
-        starOff  : 'star-off-big.png',
-        starOn   : 'star-on-big.png',
-        half     : true,
-        path     : 'img'});
-    });
-  });
-</script>
