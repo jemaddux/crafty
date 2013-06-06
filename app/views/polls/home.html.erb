@@ -9,7 +9,7 @@
 
   <%= form_tag("/polls", method: "post", class: "form") do %>
     <%= text_field_tag(:username) %>
-    <%= submit_tag("Go!") %>
+    <%= submit_tag("Go!", class: "btn btn-large btn-success") %>
   <% end %>
 
   <span id="hidden">
