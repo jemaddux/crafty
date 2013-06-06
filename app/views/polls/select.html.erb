@@ -16,7 +16,7 @@
           <h4><%= image_tag(item.item_image_urls.first.medium_url) %></h4>
           <p>
             <%= check_box_tag(item.id) %>
-            <%= label_tag(item.name) %>
+            <%= simple_format(item.name) %>
           </p>
           <br>
         <% end %>
@@ -27,7 +27,7 @@
           <h4><%= image_tag(item.item_image_urls.first.medium_url) %></h4>
           <p>
             <%= check_box_tag(item.id) %>
-            <%= label_tag(item.name) %>
+            <span class="small_text"><%= simple_format(item.name) %></span>
           </p>
           <br>
         <% end %>
